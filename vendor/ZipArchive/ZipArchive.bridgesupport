@@ -1,0 +1,438 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<struct name='tm_unz' type='{tm_unz_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}'>
+<field declared_type='uInt' name='tm_sec' type='I'/>
+<field declared_type='uInt' name='tm_min' type='I'/>
+<field declared_type='uInt' name='tm_hour' type='I'/>
+<field declared_type='uInt' name='tm_mday' type='I'/>
+<field declared_type='uInt' name='tm_mon' type='I'/>
+<field declared_type='uInt' name='tm_year' type='I'/>
+</struct>
+<struct name='tm_unz_s' type='{tm_unz_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}'>
+<field declared_type='uInt' name='tm_sec' type='I'/>
+<field declared_type='uInt' name='tm_min' type='I'/>
+<field declared_type='uInt' name='tm_hour' type='I'/>
+<field declared_type='uInt' name='tm_mday' type='I'/>
+<field declared_type='uInt' name='tm_mon' type='I'/>
+<field declared_type='uInt' name='tm_year' type='I'/>
+</struct>
+<struct name='tm_zip' type='{tm_zip_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}'>
+<field declared_type='uInt' name='tm_sec' type='I'/>
+<field declared_type='uInt' name='tm_min' type='I'/>
+<field declared_type='uInt' name='tm_hour' type='I'/>
+<field declared_type='uInt' name='tm_mday' type='I'/>
+<field declared_type='uInt' name='tm_mon' type='I'/>
+<field declared_type='uInt' name='tm_year' type='I'/>
+</struct>
+<struct name='tm_zip_s' type='{tm_zip_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}'>
+<field declared_type='uInt' name='tm_sec' type='I'/>
+<field declared_type='uInt' name='tm_min' type='I'/>
+<field declared_type='uInt' name='tm_hour' type='I'/>
+<field declared_type='uInt' name='tm_mday' type='I'/>
+<field declared_type='uInt' name='tm_mon' type='I'/>
+<field declared_type='uInt' name='tm_year' type='I'/>
+</struct>
+<struct name='unz_file_info' type='{unz_file_info_s=&quot;version&quot;?&quot;version_needed&quot;?&quot;flag&quot;?&quot;compression_method&quot;?&quot;dosDate&quot;?&quot;crc&quot;?&quot;compressed_size&quot;?&quot;uncompressed_size&quot;?&quot;size_filename&quot;?&quot;size_file_extra&quot;?&quot;size_file_comment&quot;?&quot;disk_num_start&quot;?&quot;internal_fa&quot;?&quot;external_fa&quot;?&quot;tmu_date&quot;{tm_unz_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}}'>
+<field declared_type='uLong' name='version' type='?'/>
+<field declared_type='uLong' name='version_needed' type='?'/>
+<field declared_type='uLong' name='flag' type='?'/>
+<field declared_type='uLong' name='compression_method' type='?'/>
+<field declared_type='uLong' name='dosDate' type='?'/>
+<field declared_type='uLong' name='crc' type='?'/>
+<field declared_type='uLong' name='compressed_size' type='?'/>
+<field declared_type='uLong' name='uncompressed_size' type='?'/>
+<field declared_type='uLong' name='size_filename' type='?'/>
+<field declared_type='uLong' name='size_file_extra' type='?'/>
+<field declared_type='uLong' name='size_file_comment' type='?'/>
+<field declared_type='uLong' name='disk_num_start' type='?'/>
+<field declared_type='uLong' name='internal_fa' type='?'/>
+<field declared_type='uLong' name='external_fa' type='?'/>
+<field declared_type='tm_unz' name='tmu_date' type='{tm_unz_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}'/>
+</struct>
+<struct name='unz_file_info_s' type='{unz_file_info_s=&quot;version&quot;?&quot;version_needed&quot;?&quot;flag&quot;?&quot;compression_method&quot;?&quot;dosDate&quot;?&quot;crc&quot;?&quot;compressed_size&quot;?&quot;uncompressed_size&quot;?&quot;size_filename&quot;?&quot;size_file_extra&quot;?&quot;size_file_comment&quot;?&quot;disk_num_start&quot;?&quot;internal_fa&quot;?&quot;external_fa&quot;?&quot;tmu_date&quot;{tm_unz_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}}'>
+<field declared_type='uLong' name='version' type='?'/>
+<field declared_type='uLong' name='version_needed' type='?'/>
+<field declared_type='uLong' name='flag' type='?'/>
+<field declared_type='uLong' name='compression_method' type='?'/>
+<field declared_type='uLong' name='dosDate' type='?'/>
+<field declared_type='uLong' name='crc' type='?'/>
+<field declared_type='uLong' name='compressed_size' type='?'/>
+<field declared_type='uLong' name='uncompressed_size' type='?'/>
+<field declared_type='uLong' name='size_filename' type='?'/>
+<field declared_type='uLong' name='size_file_extra' type='?'/>
+<field declared_type='uLong' name='size_file_comment' type='?'/>
+<field declared_type='uLong' name='disk_num_start' type='?'/>
+<field declared_type='uLong' name='internal_fa' type='?'/>
+<field declared_type='uLong' name='external_fa' type='?'/>
+<field declared_type='tm_unz' name='tmu_date' type='{tm_unz_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}'/>
+</struct>
+<struct name='unz_file_pos' type='{unz_file_pos_s=&quot;pos_in_zip_directory&quot;?&quot;num_of_file&quot;?}'>
+<field declared_type='uLong' name='pos_in_zip_directory' type='?'/>
+<field declared_type='uLong' name='num_of_file' type='?'/>
+</struct>
+<struct name='unz_file_pos_s' type='{unz_file_pos_s=&quot;pos_in_zip_directory&quot;?&quot;num_of_file&quot;?}'>
+<field declared_type='uLong' name='pos_in_zip_directory' type='?'/>
+<field declared_type='uLong' name='num_of_file' type='?'/>
+</struct>
+<struct name='unz_global_info' type='{unz_global_info_s=&quot;number_entry&quot;?&quot;size_comment&quot;?}'>
+<field declared_type='uLong' name='number_entry' type='?'/>
+<field declared_type='uLong' name='size_comment' type='?'/>
+</struct>
+<struct name='unz_global_info_s' type='{unz_global_info_s=&quot;number_entry&quot;?&quot;size_comment&quot;?}'>
+<field declared_type='uLong' name='number_entry' type='?'/>
+<field declared_type='uLong' name='size_comment' type='?'/>
+</struct>
+<struct name='zip_fileinfo' type='{_zip_fileinfo=&quot;tmz_date&quot;{tm_zip_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}&quot;dosDate&quot;?&quot;internal_fa&quot;?&quot;external_fa&quot;?}'>
+<field declared_type='tm_zip' name='tmz_date' type='{tm_zip_s=&quot;tm_sec&quot;I&quot;tm_min&quot;I&quot;tm_hour&quot;I&quot;tm_mday&quot;I&quot;tm_mon&quot;I&quot;tm_year&quot;I}'/>
+<field declared_type='uLong' name='dosDate' type='?'/>
+<field declared_type='uLong' name='internal_fa' type='?'/>
+<field declared_type='uLong' name='external_fa' type='?'/>
+</struct>
+<opaque name='zlib_filefunc_def' type='^{zlib_filefunc_def_s=}'/>
+<constant declared_type='void' name='fill_fopen_filefunc' type='v'/>
+<enum name='APPEND_STATUS_ADDINZIP' value='2'/>
+<enum name='APPEND_STATUS_CREATE' value='0'/>
+<enum name='APPEND_STATUS_CREATEAFTER' value='1'/>
+<enum name='DEF_MEM_LEVEL' value='8'/>
+<enum name='UNZ_BADZIPFILE' value='-103'/>
+<enum name='UNZ_CRCERROR' value='-105'/>
+<enum name='UNZ_END_OF_LIST_OF_FILE' value='-100'/>
+<enum name='UNZ_EOF' value='0'/>
+<enum name='UNZ_ERRNO' value='-1'/>
+<enum name='UNZ_INTERNALERROR' value='-104'/>
+<enum name='UNZ_OK' value='0'/>
+<enum name='UNZ_PARAMERROR' value='-102'/>
+<enum name='ZIP_BADZIPFILE' value='-103'/>
+<enum name='ZIP_EOF' value='0'/>
+<enum name='ZIP_ERRNO' value='-1'/>
+<enum name='ZIP_INTERNALERROR' value='-104'/>
+<enum name='ZIP_OK' value='0'/>
+<enum name='ZIP_PARAMERROR' value='-102'/>
+<enum name='ZLIB_FILEFUNC_MODE_CREATE' value='8'/>
+<enum name='ZLIB_FILEFUNC_MODE_EXISTING' value='4'/>
+<enum name='ZLIB_FILEFUNC_MODE_READ' value='1'/>
+<enum name='ZLIB_FILEFUNC_MODE_READWRITEFILTER' value='3'/>
+<enum name='ZLIB_FILEFUNC_MODE_WRITE' value='2'/>
+<enum name='ZLIB_FILEFUNC_SEEK_CUR' value='1'/>
+<enum name='ZLIB_FILEFUNC_SEEK_END' value='2'/>
+<enum name='ZLIB_FILEFUNC_SEEK_SET' value='0'/>
+<function name='decrypt_byte'>
+<arg declared_type='unsigned long*' name='pkeys' type='^L'/>
+<arg declared_type='unsigned long*' name='pcrc_32_tab' type='^L' const='true'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='init_keys'>
+<arg declared_type='char*' name='passwd' type='*' const='true'/>
+<arg declared_type='unsigned long*' name='pkeys' type='^L'/>
+<arg declared_type='unsigned long*' name='pcrc_32_tab' type='^L' const='true'/>
+<retval declared_type='void' type='v'/>
+</function>
+<function name='unzClose'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzCloseCurrentFile'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGetCurrentFileInfo'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='unz_file_info*' name='pfile_info' type='^{unz_file_info_s=??????????????{tm_unz_s=IIIIII}}'/>
+<arg declared_type='char*' name='szFileName' type='*'/>
+<arg declared_type='uLong*' name='fileNameBufferSize' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='void*' name='extraField' type='^v'/>
+<arg declared_type='uLong*' name='extraFieldBufferSize' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='char*' name='szComment' type='*'/>
+<arg declared_type='uLong*' name='commentBufferSize' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGetFilePos'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='unz_file_pos*' name='file_pos' type='^{unz_file_pos_s=??}'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGetGlobalComment'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='char*' name='szComment' type='*'/>
+<arg declared_type='uLong*' name='uSizeBuf' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGetGlobalInfo'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='unz_global_info*' name='pglobal_info' type='^{unz_global_info_s=??}'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGetLocalExtrafield'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='voidp' name='buf' type='^v'/>
+<arg declared_type='unsigned int' name='len' type='I'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGetOffset'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGoToFilePos'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='unz_file_pos*' name='file_pos' type='^{unz_file_pos_s=??}'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGoToFirstFile'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzGoToNextFile'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzLocateFile'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='char*' name='szFileName' type='*' const='true'/>
+<arg declared_type='int' name='iCaseSensitivity' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzOpen'>
+<arg declared_type='char*' name='path' type='*' const='true'/>
+<retval declared_type='unzFile' type='^v'/>
+</function>
+<function name='unzOpen2'>
+<arg declared_type='char*' name='path' type='*' const='true'/>
+<arg declared_type='zlib_filefunc_def*' name='pzlib_filefunc_def' type='^{zlib_filefunc_def_s=ii^?^l^l^i^i?}'/>
+<retval declared_type='unzFile' type='^v'/>
+</function>
+<function name='unzOpenCurrentFile'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzOpenCurrentFile2'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='int*' name='method' type='^i'/>
+<arg declared_type='int*' name='level' type='^i'/>
+<arg declared_type='int' name='raw' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzOpenCurrentFile3'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='int*' name='method' type='^i'/>
+<arg declared_type='int*' name='level' type='^i'/>
+<arg declared_type='int' name='raw' type='i'/>
+<arg declared_type='char*' name='password' type='*' const='true'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzOpenCurrentFilePassword'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='char*' name='password' type='*' const='true'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzReadCurrentFile'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='voidp' name='buf' type='^v'/>
+<arg declared_type='unsigned int' name='len' type='I'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzRepair'>
+<arg declared_type='char*' name='file' type='*' const='true'/>
+<arg declared_type='char*' name='fileOut' type='*' const='true'/>
+<arg declared_type='char*' name='fileOutTmp' type='*' const='true'/>
+<arg declared_type='uLong*' name='nRecovered' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='uLong*' name='bytesRecovered' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzSetOffset'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<arg declared_type='uLong*' name='pos' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzStringFileNameCompare'>
+<arg declared_type='char*' name='fileName1' type='*' const='true'/>
+<arg declared_type='char*' name='fileName2' type='*' const='true'/>
+<arg declared_type='int' name='iCaseSensitivity' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unzeof'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='unztell'>
+<arg declared_type='unzFile' name='file' type='^v'/>
+<retval declared_type='long' type='l'/>
+</function>
+<function name='update_keys'>
+<arg declared_type='unsigned long*' name='pkeys' type='^L'/>
+<arg declared_type='unsigned long*' name='pcrc_32_tab' type='^L' const='true'/>
+<arg declared_type='int' name='c' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='zipClose'>
+<arg declared_type='zipFile' name='file' type='^v'/>
+<arg declared_type='char*' name='global_comment' type='*' const='true'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='zipCloseFileInZip'>
+<arg declared_type='zipFile' name='file' type='^v'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='zipCloseFileInZipRaw'>
+<arg declared_type='zipFile' name='file' type='^v'/>
+<arg declared_type='uLong*' name='uncompressed_size' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<arg declared_type='uLong*' name='crc32' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='zipOpen'>
+<arg declared_type='char*' name='pathname' type='*' const='true'/>
+<arg declared_type='int' name='append' type='i'/>
+<retval declared_type='zipFile' type='^v'/>
+</function>
+<function name='zipOpen2'>
+<arg declared_type='char*' name='pathname' type='*' const='true'/>
+<arg declared_type='int' name='append' type='i'/>
+<arg declared_type='zipcharpc*' name='globalcomment' type='^*'/>
+<arg declared_type='zlib_filefunc_def*' name='pzlib_filefunc_def' type='^{zlib_filefunc_def_s=ii^?^l^l^i^i?}'/>
+<retval declared_type='zipFile' type='^v'/>
+</function>
+<function name='zipOpenNewFileInZip'>
+<arg declared_type='zipFile' name='file' type='^v'/>
+<arg declared_type='char*' name='filename' type='*' const='true'/>
+<arg declared_type='zip_fileinfo*' name='zipfi' type='^{_zip_fileinfo={tm_zip_s=IIIIII}???}' const='true'/>
+<arg declared_type='void*' name='extrafield_local' type='^v' const='true'/>
+<arg declared_type='uInt' name='size_extrafield_local' type='I'/>
+<arg declared_type='void*' name='extrafield_global' type='^v' const='true'/>
+<arg declared_type='uInt' name='size_extrafield_global' type='I'/>
+<arg declared_type='char*' name='comment' type='*' const='true'/>
+<arg declared_type='int' name='method' type='i'/>
+<arg declared_type='int' name='level' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='zipOpenNewFileInZip2'>
+<arg declared_type='zipFile' name='file' type='^v'/>
+<arg declared_type='char*' name='filename' type='*' const='true'/>
+<arg declared_type='zip_fileinfo*' name='zipfi' type='^{_zip_fileinfo={tm_zip_s=IIIIII}???}' const='true'/>
+<arg declared_type='void*' name='extrafield_local' type='^v' const='true'/>
+<arg declared_type='uInt' name='size_extrafield_local' type='I'/>
+<arg declared_type='void*' name='extrafield_global' type='^v' const='true'/>
+<arg declared_type='uInt' name='size_extrafield_global' type='I'/>
+<arg declared_type='char*' name='comment' type='*' const='true'/>
+<arg declared_type='int' name='method' type='i'/>
+<arg declared_type='int' name='level' type='i'/>
+<arg declared_type='int' name='raw' type='i'/>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='zipOpenNewFileInZip3'>
+<arg declared_type='zipFile' name='file' type='^v'/>
+<arg declared_type='char*' name='filename' type='*' const='true'/>
+<arg declared_type='zip_fileinfo*' name='zipfi' type='^{_zip_fileinfo={tm_zip_s=IIIIII}???}' const='true'/>
+<arg declared_type='void*' name='extrafield_local' type='^v' const='true'/>
+<arg declared_type='uInt' name='size_extrafield_local' type='I'/>
+<arg declared_type='void*' name='extrafield_global' type='^v' const='true'/>
+<arg declared_type='uInt' name='size_extrafield_global' type='I'/>
+<arg declared_type='char*' name='comment' type='*' const='true'/>
+<arg declared_type='int' name='method' type='i'/>
+<arg declared_type='int' name='level' type='i'/>
+<arg declared_type='int' name='raw' type='i'/>
+<arg declared_type='int' name='windowBits' type='i'/>
+<arg declared_type='int' name='memLevel' type='i'/>
+<arg declared_type='int' name='strategy' type='i'/>
+<arg declared_type='char*' name='password' type='*' const='true'/>
+<arg declared_type='uLong*' name='crcForCtypting' type='^?' function_pointer='true'>
+<arg declared_type='int*' type='^i'/>
+<retval declared_type='int' type='i'/>
+</arg>
+<retval declared_type='int' type='i'/>
+</function>
+<function name='zipWriteInFileInZip'>
+<arg declared_type='zipFile' name='file' type='^v'/>
+<arg declared_type='void*' name='buf' type='^v' const='true'/>
+<arg declared_type='unsigned int' name='len' type='I'/>
+<retval declared_type='int' type='i'/>
+</function>
+<class name='NSObject'>
+<method selector='ErrorMessage:'>
+<arg index='0' declared_type='NSString*' name='msg' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='OverWriteOperation:'>
+<arg index='0' declared_type='NSString*' name='file' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</class>
+<class name='ZipArchive'>
+<method selector='CloseZipFile2'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='CreateZipFile2:'>
+<arg index='0' declared_type='NSString*' name='zipFile' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='CreateZipFile2:Password:'>
+<arg index='0' declared_type='NSString*' name='zipFile' type='@'/>
+<arg index='1' declared_type='NSString*' name='password' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='UnzipCloseFile'>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='UnzipFileTo:overWrite:'>
+<arg index='0' declared_type='NSString*' name='path' type='@'/>
+<arg index='1' declared_type='BOOL' name='overwrite' type='B'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='UnzipOpenFile:'>
+<arg index='0' declared_type='NSString*' name='zipFile' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='UnzipOpenFile:Password:'>
+<arg index='0' declared_type='NSString*' name='zipFile' type='@'/>
+<arg index='1' declared_type='NSString*' name='password' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='addFileToZip:newname:'>
+<arg index='0' declared_type='NSString*' name='file' type='@'/>
+<arg index='1' declared_type='NSString*' name='newname' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+<method selector='delegate'>
+<retval declared_type='id' type='@'/>
+</method>
+<method selector='setDelegate:'>
+<arg index='0' declared_type='id' name='delegate' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+</class>
+<informal_protocol name='ZipArchiveDelegate'>
+<method selector='ErrorMessage:' type='v12@0:4@8'>
+<arg index='0' declared_type='NSString*' name='msg' type='@'/>
+<retval declared_type='void' type='v'/>
+</method>
+<method selector='OverWriteOperation:' type='B12@0:4@8'>
+<arg index='0' declared_type='NSString*' name='file' type='@'/>
+<retval declared_type='BOOL' type='B'/>
+</method>
+</informal_protocol>
+</signatures>
