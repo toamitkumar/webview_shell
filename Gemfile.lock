@@ -43,5 +43,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cocoapods (~> 0.13.0)
+  cocoapods (= 0.13.0)
   motion-cocoapods (~> 1.1.2)

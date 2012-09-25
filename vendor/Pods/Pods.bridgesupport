@@ -23,53 +23,53 @@
 <constant declared_type='NSString*' const='true' name='ZKPathsKey' type='@'/>
 <constant declared_type='NSUInteger' const='true' name='ZKZipBlockSize' type='I'/>
 <constant declared_type='NSString*' const='true' name='ZKusingResourceForkKey' type='@'/>
-<enum value='0' name='ZKLogLevelAll'/>
-<enum value='1' name='ZKLogLevelDebug'/>
-<enum value='2' name='ZKLogLevelError'/>
-<enum value='3' name='ZKLogLevelNotice'/>
-<enum value='0' name='ZK_TARGET_OS_MAC'/>
-<enum value='0' name='zkCancelled'/>
-<enum value='-1' name='zkFailed'/>
-<enum value='1' name='zkSucceeded'/>
+<enum name='ZKLogLevelAll' value='0'/>
+<enum name='ZKLogLevelDebug' value='1'/>
+<enum name='ZKLogLevelError' value='2'/>
+<enum name='ZKLogLevelNotice' value='3'/>
+<enum name='ZK_TARGET_OS_MAC' value='0'/>
+<enum name='zkCancelled' value='0'/>
+<enum name='zkFailed' value='-1'/>
+<enum name='zkSucceeded' value='1'/>
 <class name='NSData'>
 <method selector='zk_crc32'>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='zk_crc32:'>
-<arg declared_type='NSUInteger' name='crc' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='crc' type='I'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='zk_deflate'>
 <retval declared_type='NSData*' type='@'/>
 </method>
 <method selector='zk_hostBoolOffsetBy:'>
-<arg declared_type='NSUInteger*' name='offset' type='^I' index='0'/>
+<arg declared_type='NSUInteger*' index='0' name='offset' type='^I'/>
 <retval declared_type='BOOL' type='B'/>
 </method>
 <method selector='zk_hostInt16OffsetBy:'>
-<arg declared_type='NSUInteger*' name='offset' type='^I' index='0'/>
+<arg declared_type='NSUInteger*' index='0' name='offset' type='^I'/>
 <retval declared_type='UInt16' type='S'/>
 </method>
 <method selector='zk_hostInt32OffsetBy:'>
-<arg declared_type='NSUInteger*' name='offset' type='^I' index='0'/>
+<arg declared_type='NSUInteger*' index='0' name='offset' type='^I'/>
 <retval declared_type='UInt32' type='L'/>
 </method>
 <method selector='zk_hostInt64OffsetBy:'>
-<arg declared_type='NSUInteger*' name='offset' type='^I' index='0'/>
+<arg declared_type='NSUInteger*' index='0' name='offset' type='^I'/>
 <retval declared_type='UInt64' type='Q'/>
 </method>
 <method selector='zk_inflate'>
 <retval declared_type='NSData*' type='@'/>
 </method>
 <method selector='zk_stringOffsetBy:length:'>
-<arg declared_type='NSUInteger*' name='offset' type='^I' index='0'/>
-<arg declared_type='NSUInteger' name='length' type='I' index='1'/>
+<arg declared_type='NSUInteger*' index='0' name='offset' type='^I'/>
+<arg declared_type='NSUInteger' index='1' name='length' type='I'/>
 <retval declared_type='NSString*' type='@'/>
 </method>
 </class>
 <class name='NSDate'>
-<method class_method='true' selector='zk_dateWithDosDate:'>
-<arg declared_type='NSUInteger' name='dosDate' type='I' index='0'/>
+<method selector='zk_dateWithDosDate:' class_method='true'>
+<arg declared_type='NSUInteger' index='0' name='dosDate' type='I'/>
 <retval declared_type='NSDate*' type='@'/>
 </method>
 <method selector='zk_dosDate'>
@@ -83,99 +83,99 @@
 <method selector='zk_totalFileSize'>
 <retval declared_type='unsigned long long' type='Q'/>
 </method>
-<method class_method='true' selector='zk_totalSizeAndCountDictionaryWithSize:andItemCount:'>
-<arg declared_type='unsigned long long' name='size' type='Q' index='0'/>
-<arg declared_type='unsigned long long' name='count' type='Q' index='1'/>
+<method selector='zk_totalSizeAndCountDictionaryWithSize:andItemCount:' class_method='true'>
+<arg declared_type='unsigned long long' index='0' name='size' type='Q'/>
+<arg declared_type='unsigned long long' index='1' name='count' type='Q'/>
 <retval declared_type='NSDictionary*' type='@'/>
 </method>
 </class>
 <class name='NSFileHandle'>
-<method class_method='true' selector='zk_newFileHandleForWritingAtPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<method selector='zk_newFileHandleForWritingAtPath:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='NSFileHandle*' type='@'/>
 </method>
 </class>
 <class name='NSFileManager'>
 <method selector='zkTotalSizeAndItemCountAtPath:usingResourceFork:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='BOOL' name='rfFlag' type='B' index='1'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='BOOL' index='1' name='rfFlag' type='B'/>
 <retval declared_type='NSDictionary*' type='@'/>
 </method>
 <method selector='zk_crcForPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='zk_crcForPath:invoker:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='id' name='invoker' type='@' index='1'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='id' index='1' name='invoker' type='@'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='zk_crcForPath:invoker:throttleThreadSleepTime:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='id' name='invoker' type='@' index='1'/>
-<arg declared_type='NSTimeInterval' name='throttleThreadSleepTime' type='d' index='2'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='id' index='1' name='invoker' type='@'/>
+<arg declared_type='NSTimeInterval' index='2' name='throttleThreadSleepTime' type='d'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='zk_dataSizeAtFilePath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='unsigned long long' type='Q'/>
 </method>
 <method selector='zk_externalFileAttributesAtPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='zk_externalFileAttributesFor:'>
-<arg declared_type='NSDictionary*' name='fileAttributes' type='@' index='0'/>
+<arg declared_type='NSDictionary*' index='0' name='fileAttributes' type='@'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='zk_isDirAtPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='BOOL' type='B'/>
 </method>
 <method selector='zk_isSymLinkAtPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='BOOL' type='B'/>
 </method>
 <method selector='zk_modificationDateForPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='NSDate*' type='@'/>
 </method>
 <method selector='zk_posixPermissionsAtPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 </class>
 <class name='NSMutableData'>
 <method selector='zk_appendLittleBool:'>
-<arg declared_type='BOOL' name='value' type='B' index='0'/>
+<arg declared_type='BOOL' index='0' name='value' type='B'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='zk_appendLittleInt16:'>
-<arg declared_type='UInt16' name='value' type='S' index='0'/>
+<arg declared_type='UInt16' index='0' name='value' type='S'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='zk_appendLittleInt32:'>
-<arg declared_type='UInt32' name='value' type='L' index='0'/>
+<arg declared_type='UInt32' index='0' name='value' type='L'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='zk_appendLittleInt64:'>
-<arg declared_type='UInt64' name='value' type='Q' index='0'/>
+<arg declared_type='UInt64' index='0' name='value' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='zk_appendPrecomposedUTF8String:'>
-<arg declared_type='NSString*' name='value' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='value' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
-<method class_method='true' selector='zk_dataWithLittleInt16:'>
-<arg declared_type='UInt16' name='value' type='S' index='0'/>
+<method selector='zk_dataWithLittleInt16:' class_method='true'>
+<arg declared_type='UInt16' index='0' name='value' type='S'/>
 <retval declared_type='NSMutableData*' type='@'/>
 </method>
-<method class_method='true' selector='zk_dataWithLittleInt32:'>
-<arg declared_type='UInt32' name='value' type='L' index='0'/>
+<method selector='zk_dataWithLittleInt32:' class_method='true'>
+<arg declared_type='UInt32' index='0' name='value' type='L'/>
 <retval declared_type='NSMutableData*' type='@'/>
 </method>
-<method class_method='true' selector='zk_dataWithLittleInt64:'>
-<arg declared_type='UInt64' name='value' type='Q' index='0'/>
+<method selector='zk_dataWithLittleInt64:' class_method='true'>
+<arg declared_type='UInt64' index='0' name='value' type='Q'/>
 <retval declared_type='NSMutableData*' type='@'/>
 </method>
 </class>
@@ -192,7 +192,7 @@
 <retval declared_type='NSString*' type='@'/>
 </method>
 <method selector='calculateSizeAndItemCount:'>
-<arg declared_type='NSDictionary*' name='userInfo' type='@' index='0'/>
+<arg declared_type='NSDictionary*' index='0' name='userInfo' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='cdTrailer'>
@@ -202,7 +202,7 @@
 <retval declared_type='NSMutableArray*' type='@'/>
 </method>
 <method selector='cleanUpExpansionDirectory:'>
-<arg declared_type='NSString*' name='expansionDirectory' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='expansionDirectory' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='comment'>
@@ -233,15 +233,15 @@
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='didUpdateBytesWritten:'>
-<arg declared_type='NSNumber*' name='byteCount' type='@' index='0'/>
+<arg declared_type='NSNumber*' index='0' name='byteCount' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='didUpdateTotalCount:'>
-<arg declared_type='NSNumber*' name='count' type='@' index='0'/>
+<arg declared_type='NSNumber*' index='0' name='count' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='didUpdateTotalSize:'>
-<arg declared_type='NSNumber*' name='size' type='@' index='0'/>
+<arg declared_type='NSNumber*' index='0' name='size' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='fileManager'>
@@ -251,58 +251,58 @@
 <retval declared_type='id __attribute__((objc_gc(weak)))' type='@'/>
 </method>
 <method selector='setArchivePath:'>
-<arg declared_type='NSString*' name='archivePath' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='archivePath' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCdTrailer:'>
-<arg declared_type='ZKCDTrailer*' name='cdTrailer' type='@' index='0'/>
+<arg declared_type='ZKCDTrailer*' index='0' name='cdTrailer' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCentralDirectory:'>
-<arg declared_type='NSMutableArray*' name='centralDirectory' type='@' index='0'/>
+<arg declared_type='NSMutableArray*' index='0' name='centralDirectory' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setComment:'>
-<arg declared_type='NSString*' name='comment' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='comment' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setDelegate:'>
-<arg declared_type='id __attribute__((objc_gc(weak)))' name='delegate' type='@' index='0'/>
+<arg declared_type='id __attribute__((objc_gc(weak)))' index='0' name='delegate' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setFileManager:'>
-<arg declared_type='NSFileManager*' name='fileManager' type='@' index='0'/>
+<arg declared_type='NSFileManager*' index='0' name='fileManager' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setInvoker:'>
-<arg declared_type='id __attribute__((objc_gc(weak)))' name='invoker' type='@' index='0'/>
+<arg declared_type='id __attribute__((objc_gc(weak)))' index='0' name='invoker' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setThrottleThreadSleepTime:'>
-<arg declared_type='NSTimeInterval' name='throttleThreadSleepTime' type='d' index='0'/>
+<arg declared_type='NSTimeInterval' index='0' name='throttleThreadSleepTime' type='d'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='throttleThreadSleepTime'>
 <retval declared_type='NSTimeInterval' type='d'/>
 </method>
 <method selector='uniqueExpansionDirectoryIn:'>
-<arg declared_type='NSString*' name='enclosingFolder' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='enclosingFolder' type='@'/>
 <retval declared_type='NSString*' type='@'/>
 </method>
-<method class_method='true' selector='uniquify:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<method selector='uniquify:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='NSString*' type='@'/>
 </method>
-<method class_method='true' selector='validArchiveAtPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<method selector='validArchiveAtPath:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='BOOL' type='B'/>
 </method>
 <method selector='willUnzipPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='willZipPath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 </class>
@@ -379,94 +379,94 @@
 <method selector='posixPermissions'>
 <retval declared_type='NSNumber*' type='@'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:atOffset:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='unsigned long long' name='offset' type='Q' index='1'/>
+<method selector='recordWithArchivePath:atOffset:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='unsigned long long' index='1' name='offset' type='Q'/>
 <retval declared_type='ZKCDHeader*' type='@'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg declared_type='NSData*' name='data' type='@' index='0'/>
-<arg declared_type='NSUInteger' name='offset' type='I' index='1'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='offset' type='I'/>
 <retval declared_type='ZKCDHeader*' type='@'/>
 </method>
 <method selector='setCachedData:'>
-<arg declared_type='NSMutableData*' name='cachedData' type='@' index='0'/>
+<arg declared_type='NSMutableData*' index='0' name='cachedData' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setComment:'>
-<arg declared_type='NSString*' name='comment' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='comment' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCommentLength:'>
-<arg declared_type='NSUInteger' name='commentLength' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='commentLength' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCompressedSize:'>
-<arg declared_type='unsigned long long' name='compressedSize' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='compressedSize' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCompressionMethod:'>
-<arg declared_type='NSUInteger' name='compressionMethod' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='compressionMethod' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCrc:'>
-<arg declared_type='NSUInteger' name='crc' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='crc' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setDiskNumberStart:'>
-<arg declared_type='NSUInteger' name='diskNumberStart' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='diskNumberStart' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setExternalFileAttributes:'>
-<arg declared_type='NSUInteger' name='externalFileAttributes' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='externalFileAttributes' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setExtraField:'>
-<arg declared_type='NSData*' name='extraField' type='@' index='0'/>
+<arg declared_type='NSData*' index='0' name='extraField' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setExtraFieldLength:'>
-<arg declared_type='NSUInteger' name='extraFieldLength' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='extraFieldLength' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setFilename:'>
-<arg declared_type='NSString*' name='filename' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='filename' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setFilenameLength:'>
-<arg declared_type='NSUInteger' name='filenameLength' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='filenameLength' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setGeneralPurposeBitFlag:'>
-<arg declared_type='NSUInteger' name='generalPurposeBitFlag' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='generalPurposeBitFlag' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setInternalFileAttributes:'>
-<arg declared_type='NSUInteger' name='internalFileAttributes' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='internalFileAttributes' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setLastModDate:'>
-<arg declared_type='NSDate*' name='lastModDate' type='@' index='0'/>
+<arg declared_type='NSDate*' index='0' name='lastModDate' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setLocalHeaderOffset:'>
-<arg declared_type='unsigned long long' name='localHeaderOffset' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='localHeaderOffset' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg declared_type='NSUInteger' name='magicNumber' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='magicNumber' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setUncompressedSize:'>
-<arg declared_type='unsigned long long' name='uncompressedSize' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='uncompressedSize' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setVersionMadeBy:'>
-<arg declared_type='NSUInteger' name='versionMadeBy' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='versionMadeBy' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setVersionNeededToExtract:'>
-<arg declared_type='NSUInteger' name='versionNeededToExtract' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='versionNeededToExtract' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='uncompressedSize'>
@@ -510,53 +510,53 @@
 <method selector='offsetOfStartOfCentralDirectory'>
 <retval declared_type='unsigned long long' type='Q'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<method selector='recordWithArchivePath:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='ZKCDTrailer*' type='@'/>
 </method>
-<method class_method='true' selector='recordWithData:'>
-<arg declared_type='NSData*' name='data' type='@' index='0'/>
+<method selector='recordWithData:' class_method='true'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
 <retval declared_type='ZKCDTrailer*' type='@'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg declared_type='NSData*' name='data' type='@' index='0'/>
-<arg declared_type='NSUInteger' name='offset' type='I' index='1'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='offset' type='I'/>
 <retval declared_type='ZKCDTrailer*' type='@'/>
 </method>
 <method selector='setComment:'>
-<arg declared_type='NSString*' name='comment' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='comment' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCommentLength:'>
-<arg declared_type='NSUInteger' name='commentLength' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='commentLength' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setDiskNumberWithStartOfCentralDirectory:'>
-<arg declared_type='NSUInteger' name='diskNumberWithStartOfCentralDirectory' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='diskNumberWithStartOfCentralDirectory' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg declared_type='NSUInteger' name='magicNumber' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='magicNumber' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setNumberOfCentralDirectoryEntriesOnThisDisk:'>
-<arg declared_type='NSUInteger' name='numberOfCentralDirectoryEntriesOnThisDisk' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='numberOfCentralDirectoryEntriesOnThisDisk' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setOffsetOfStartOfCentralDirectory:'>
-<arg declared_type='unsigned long long' name='offsetOfStartOfCentralDirectory' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='offsetOfStartOfCentralDirectory' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setSizeOfCentralDirectory:'>
-<arg declared_type='unsigned long long' name='sizeOfCentralDirectory' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='sizeOfCentralDirectory' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setThisDiskNumber:'>
-<arg declared_type='NSUInteger' name='thisDiskNumber' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='thisDiskNumber' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setTotalNumberOfCentralDirectoryEntries:'>
-<arg declared_type='NSUInteger' name='totalNumberOfCentralDirectoryEntries' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='totalNumberOfCentralDirectoryEntries' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='sizeOfCentralDirectory'>
@@ -591,54 +591,54 @@
 <method selector='offsetOfStartOfCentralDirectory'>
 <retval declared_type='unsigned long long' type='Q'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:atOffset:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='unsigned long long' name='offset' type='Q' index='1'/>
+<method selector='recordWithArchivePath:atOffset:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='unsigned long long' index='1' name='offset' type='Q'/>
 <retval declared_type='ZKCDTrailer64*' type='@'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg declared_type='NSData*' name='data' type='@' index='0'/>
-<arg declared_type='NSUInteger' name='offset' type='I' index='1'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='offset' type='I'/>
 <retval declared_type='ZKCDTrailer64*' type='@'/>
 </method>
 <method selector='setDiskNumberWithStartOfCentralDirectory:'>
-<arg declared_type='NSUInteger' name='diskNumberWithStartOfCentralDirectory' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='diskNumberWithStartOfCentralDirectory' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg declared_type='NSUInteger' name='magicNumber' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='magicNumber' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setNumberOfCentralDirectoryEntriesOnThisDisk:'>
-<arg declared_type='unsigned long long' name='numberOfCentralDirectoryEntriesOnThisDisk' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='numberOfCentralDirectoryEntriesOnThisDisk' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setOffsetOfStartOfCentralDirectory:'>
-<arg declared_type='unsigned long long' name='offsetOfStartOfCentralDirectory' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='offsetOfStartOfCentralDirectory' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setSizeOfCentralDirectory:'>
-<arg declared_type='unsigned long long' name='sizeOfCentralDirectory' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='sizeOfCentralDirectory' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setSizeOfTrailer:'>
-<arg declared_type='unsigned long long' name='sizeOfTrailer' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='sizeOfTrailer' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setThisDiskNumber:'>
-<arg declared_type='NSUInteger' name='thisDiskNumber' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='thisDiskNumber' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setTotalNumberOfCentralDirectoryEntries:'>
-<arg declared_type='unsigned long long' name='totalNumberOfCentralDirectoryEntries' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='totalNumberOfCentralDirectoryEntries' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setVersionMadeBy:'>
-<arg declared_type='NSUInteger' name='versionMadeBy' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='versionMadeBy' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setVersionNeededToExtract:'>
-<arg declared_type='NSUInteger' name='versionNeededToExtract' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='versionNeededToExtract' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='sizeOfCentralDirectory'>
@@ -679,141 +679,141 @@
 <method selector='offsetOfStartOfCentralDirectoryTrailer64'>
 <retval declared_type='unsigned long long' type='Q'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:andCDTrailerLength:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='NSUInteger' name='cdTrailerLength' type='I' index='1'/>
+<method selector='recordWithArchivePath:andCDTrailerLength:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='cdTrailerLength' type='I'/>
 <retval declared_type='ZKCDTrailer64Locator*' type='@'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg declared_type='NSData*' name='data' type='@' index='0'/>
-<arg declared_type='NSUInteger' name='offset' type='I' index='1'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='offset' type='I'/>
 <retval declared_type='ZKCDTrailer64Locator*' type='@'/>
 </method>
 <method selector='setDiskNumberWithStartOfCentralDirectory:'>
-<arg declared_type='NSUInteger' name='diskNumberWithStartOfCentralDirectory' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='diskNumberWithStartOfCentralDirectory' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg declared_type='NSUInteger' name='magicNumber' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='magicNumber' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setNumberOfDisks:'>
-<arg declared_type='NSUInteger' name='numberOfDisks' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='numberOfDisks' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setOffsetOfStartOfCentralDirectoryTrailer64:'>
-<arg declared_type='unsigned long long' name='offsetOfStartOfCentralDirectoryTrailer64' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='offsetOfStartOfCentralDirectoryTrailer64' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 </class>
 <class name='ZKDataArchive'>
-<method class_method='true' selector='archiveWithArchiveData:'>
-<arg declared_type='NSMutableData*' name='archiveData' type='@' index='0'/>
+<method selector='archiveWithArchiveData:' class_method='true'>
+<arg declared_type='NSMutableData*' index='0' name='archiveData' type='@'/>
 <retval declared_type='ZKDataArchive*' type='@'/>
 </method>
-<method class_method='true' selector='archiveWithArchivePath:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
+<method selector='archiveWithArchivePath:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
 <retval declared_type='ZKDataArchive*' type='@'/>
 </method>
 <method selector='data'>
 <retval declared_type='NSMutableData*' type='@'/>
 </method>
 <method selector='deflateData:withFilename:andAttributes:'>
-<arg declared_type='NSData*' name='data' type='@' index='0'/>
-<arg declared_type='NSString*' name='filename' type='@' index='1'/>
-<arg declared_type='NSDictionary*' name='fileAttributes' type='@' index='2'/>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSString*' index='1' name='filename' type='@'/>
+<arg declared_type='NSDictionary*' index='2' name='fileAttributes' type='@'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='deflateDirectory:relativeToPath:usingResourceFork:'>
-<arg declared_type='NSString*' name='dirPath' type='@' index='0'/>
-<arg declared_type='NSString*' name='basePath' type='@' index='1'/>
-<arg declared_type='BOOL' name='flag' type='B' index='2'/>
+<arg declared_type='NSString*' index='0' name='dirPath' type='@'/>
+<arg declared_type='NSString*' index='1' name='basePath' type='@'/>
+<arg declared_type='BOOL' index='2' name='flag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='deflateFile:relativeToPath:usingResourceFork:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='NSString*' name='basePath' type='@' index='1'/>
-<arg declared_type='BOOL' name='rfFlag' type='B' index='2'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='NSString*' index='1' name='basePath' type='@'/>
+<arg declared_type='BOOL' index='2' name='rfFlag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='deflateFiles:relativeToPath:usingResourceFork:'>
-<arg declared_type='NSArray*' name='paths' type='@' index='0'/>
-<arg declared_type='NSString*' name='basePath' type='@' index='1'/>
-<arg declared_type='BOOL' name='flag' type='B' index='2'/>
+<arg declared_type='NSArray*' index='0' name='paths' type='@'/>
+<arg declared_type='NSString*' index='1' name='basePath' type='@'/>
+<arg declared_type='BOOL' index='2' name='flag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='inflateAll'>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='inflateFile:attributes:'>
-<arg declared_type='ZKCDHeader*' name='cdHeader' type='@' index='0'/>
-<arg declared_type='NSDictionary**' name='fileAttributes' type='^@' index='1'/>
+<arg declared_type='ZKCDHeader*' index='0' name='cdHeader' type='@'/>
+<arg declared_type='NSDictionary**' index='1' name='fileAttributes' type='^@'/>
 <retval declared_type='NSData*' type='@'/>
 </method>
 <method selector='inflateInFolder:withFolderName:usingResourceFork:'>
-<arg declared_type='NSString*' name='enclosingFolder' type='@' index='0'/>
-<arg declared_type='NSString*' name='folderName' type='@' index='1'/>
-<arg declared_type='BOOL' name='rfFlag' type='B' index='2'/>
+<arg declared_type='NSString*' index='0' name='enclosingFolder' type='@'/>
+<arg declared_type='NSString*' index='1' name='folderName' type='@'/>
+<arg declared_type='BOOL' index='2' name='rfFlag' type='B'/>
 <retval declared_type='NSUInteger' type='I'/>
 </method>
 <method selector='inflatedFiles'>
 <retval declared_type='NSMutableArray*' type='@'/>
 </method>
 <method selector='setData:'>
-<arg declared_type='NSMutableData*' name='data' type='@' index='0'/>
+<arg declared_type='NSMutableData*' index='0' name='data' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setInflatedFiles:'>
-<arg declared_type='NSMutableArray*' name='inflatedFiles' type='@' index='0'/>
+<arg declared_type='NSMutableArray*' index='0' name='inflatedFiles' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 </class>
 <class name='ZKFileArchive'>
-<method class_method='true' selector='archiveWithArchivePath:'>
-<arg declared_type='NSString*' name='archivePath' type='@' index='0'/>
+<method selector='archiveWithArchivePath:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='archivePath' type='@'/>
 <retval declared_type='ZKFileArchive*' type='@'/>
 </method>
 <method selector='deflateDirectory:relativeToPath:usingResourceFork:'>
-<arg declared_type='NSString*' name='dirPath' type='@' index='0'/>
-<arg declared_type='NSString*' name='basePath' type='@' index='1'/>
-<arg declared_type='BOOL' name='flag' type='B' index='2'/>
+<arg declared_type='NSString*' index='0' name='dirPath' type='@'/>
+<arg declared_type='NSString*' index='1' name='basePath' type='@'/>
+<arg declared_type='BOOL' index='2' name='flag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='deflateFile:relativeToPath:usingResourceFork:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='NSString*' name='basePath' type='@' index='1'/>
-<arg declared_type='BOOL' name='flag' type='B' index='2'/>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='NSString*' index='1' name='basePath' type='@'/>
+<arg declared_type='BOOL' index='2' name='flag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='deflateFiles:relativeToPath:usingResourceFork:'>
-<arg declared_type='NSArray*' name='paths' type='@' index='0'/>
-<arg declared_type='NSString*' name='basePath' type='@' index='1'/>
-<arg declared_type='BOOL' name='flag' type='B' index='2'/>
+<arg declared_type='NSArray*' index='0' name='paths' type='@'/>
+<arg declared_type='NSString*' index='1' name='basePath' type='@'/>
+<arg declared_type='BOOL' index='2' name='flag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='inflateFile:toDirectory:'>
-<arg declared_type='ZKCDHeader*' name='cdHeader' type='@' index='0'/>
-<arg declared_type='NSString*' name='expansionDirectory' type='@' index='1'/>
+<arg declared_type='ZKCDHeader*' index='0' name='cdHeader' type='@'/>
+<arg declared_type='NSString*' index='1' name='expansionDirectory' type='@'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='inflateToDirectory:usingResourceFork:'>
-<arg declared_type='NSString*' name='expansionDirectory' type='@' index='0'/>
-<arg declared_type='BOOL' name='rfFlag' type='B' index='1'/>
+<arg declared_type='NSString*' index='0' name='expansionDirectory' type='@'/>
+<arg declared_type='BOOL' index='1' name='rfFlag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
 <method selector='inflateToDiskUsingResourceFork:'>
-<arg declared_type='BOOL' name='flag' type='B' index='0'/>
+<arg declared_type='BOOL' index='0' name='flag' type='B'/>
 <retval declared_type='NSInteger' type='i'/>
 </method>
-<method class_method='true' selector='process:usingResourceFork:withInvoker:andDelegate:'>
-<arg declared_type='id' name='item' type='@' index='0'/>
-<arg declared_type='BOOL' name='flag' type='B' index='1'/>
-<arg declared_type='id' name='invoker' type='@' index='2'/>
-<arg declared_type='id' name='delegate' type='@' index='3'/>
+<method selector='process:usingResourceFork:withInvoker:andDelegate:' class_method='true'>
+<arg declared_type='id' index='0' name='item' type='@'/>
+<arg declared_type='BOOL' index='1' name='flag' type='B'/>
+<arg declared_type='id' index='2' name='invoker' type='@'/>
+<arg declared_type='id' index='3' name='delegate' type='@'/>
 <retval declared_type='ZKFileArchive*' type='@'/>
 </method>
 <method selector='setUseZip64Extensions:'>
-<arg declared_type='BOOL' name='useZip64Extensions' type='B' index='0'/>
+<arg declared_type='BOOL' index='0' name='useZip64Extensions' type='B'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='useZip64Extensions'>
@@ -863,62 +863,62 @@
 <method selector='parseZip64ExtraField'>
 <retval declared_type='void' type='v'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:atOffset:'>
-<arg declared_type='NSString*' name='path' type='@' index='0'/>
-<arg declared_type='unsigned long long' name='offset' type='Q' index='1'/>
+<method selector='recordWithArchivePath:atOffset:' class_method='true'>
+<arg declared_type='NSString*' index='0' name='path' type='@'/>
+<arg declared_type='unsigned long long' index='1' name='offset' type='Q'/>
 <retval declared_type='ZKLFHeader*' type='@'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg declared_type='NSData*' name='data' type='@' index='0'/>
-<arg declared_type='NSUInteger' name='offset' type='I' index='1'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg declared_type='NSData*' index='0' name='data' type='@'/>
+<arg declared_type='NSUInteger' index='1' name='offset' type='I'/>
 <retval declared_type='ZKLFHeader*' type='@'/>
 </method>
 <method selector='setCompressedSize:'>
-<arg declared_type='unsigned long long' name='compressedSize' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='compressedSize' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCompressionMethod:'>
-<arg declared_type='NSUInteger' name='compressionMethod' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='compressionMethod' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setCrc:'>
-<arg declared_type='NSUInteger' name='crc' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='crc' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setExtraField:'>
-<arg declared_type='NSData*' name='extraField' type='@' index='0'/>
+<arg declared_type='NSData*' index='0' name='extraField' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setExtraFieldLength:'>
-<arg declared_type='NSUInteger' name='extraFieldLength' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='extraFieldLength' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setFilename:'>
-<arg declared_type='NSString*' name='filename' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='filename' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setFilenameLength:'>
-<arg declared_type='NSUInteger' name='filenameLength' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='filenameLength' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setGeneralPurposeBitFlag:'>
-<arg declared_type='NSUInteger' name='generalPurposeBitFlag' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='generalPurposeBitFlag' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setLastModDate:'>
-<arg declared_type='NSDate*' name='lastModDate' type='@' index='0'/>
+<arg declared_type='NSDate*' index='0' name='lastModDate' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg declared_type='NSUInteger' name='magicNumber' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='magicNumber' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setUncompressedSize:'>
-<arg declared_type='unsigned long long' name='uncompressedSize' type='Q' index='0'/>
+<arg declared_type='unsigned long long' index='0' name='uncompressedSize' type='Q'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setVersionNeededToExtract:'>
-<arg declared_type='NSUInteger' name='versionNeededToExtract' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='versionNeededToExtract' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='uncompressedSize'>
@@ -939,14 +939,14 @@
 <retval declared_type='NSDateFormatter*' type='@'/>
 </method>
 <method selector='levelToLabel:'>
-<arg declared_type='NSUInteger' name='level' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='level' type='I'/>
 <retval declared_type='NSString*' type='@'/>
 </method>
 <method selector='logFile:lineNumber:level:format:' variadic='true'>
-<arg declared_type='char*' name='sourceFile' type='*' index='0'/>
-<arg declared_type='NSUInteger' name='lineNumber' type='I' index='1'/>
-<arg declared_type='NSUInteger' name='level' type='I' index='2'/>
-<arg declared_type='NSString*' name='format' type='@' index='3'/>
+<arg declared_type='char*' index='0' name='sourceFile' type='*'/>
+<arg declared_type='NSUInteger' index='1' name='lineNumber' type='I'/>
+<arg declared_type='NSUInteger' index='2' name='level' type='I'/>
+<arg declared_type='NSString*' index='3' name='format' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='logFilePath'>
@@ -962,26 +962,26 @@
 <retval declared_type='int' type='i'/>
 </method>
 <method selector='setDateFormatter:'>
-<arg declared_type='NSDateFormatter*' name='dateFormatter' type='@' index='0'/>
+<arg declared_type='NSDateFormatter*' index='0' name='dateFormatter' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setLogFilePath:'>
-<arg declared_type='NSString*' name='logFilePath' type='@' index='0'/>
+<arg declared_type='NSString*' index='0' name='logFilePath' type='@'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setLogFilePointer:'>
-<arg declared_type='FILE*' name='logFilePointer' type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}' index='0'/>
+<arg declared_type='FILE*' index='0' name='logFilePointer' type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setMinimumLevel:'>
-<arg declared_type='NSUInteger' name='minimumLevel' type='I' index='0'/>
+<arg declared_type='NSUInteger' index='0' name='minimumLevel' type='I'/>
 <retval declared_type='void' type='v'/>
 </method>
 <method selector='setPid:'>
-<arg declared_type='int' name='pid' type='i' index='0'/>
+<arg declared_type='int' index='0' name='pid' type='i'/>
 <retval declared_type='void' type='v'/>
 </method>
-<method class_method='true' selector='sharedInstance'>
+<method selector='sharedInstance' class_method='true'>
 <retval declared_type='ZKLog*' type='@'/>
 </method>
 </class>
