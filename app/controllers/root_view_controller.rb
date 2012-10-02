@@ -5,9 +5,14 @@ class RootViewController < UITableViewController
   def init
     if(super)
       archivePath = NSBundle.mainBundle.pathForResource("ZipKitTest", ofType:'zip')
+      p archivePath
+      # archivePath = "/Users/toamitkumar/Desktop/new_hampshire.zip"
+      # p ZKFileArchive.process(archivePath, usingResourceFork:true, withInvoker:self, andDelegate:nil)
+      ZKFileArchive.inflateToDirectory("/Users/toamitkumar/Desktop", usingResourceFork:true)
+
+      archivePath = NSBundle.mainBundle.pathForResource("ZipKitTest", ofType:'zip')
       @archive = ZKDataArchive.archiveWithArchivePath(archivePath)
       @archive.inflateAll
-      # @archive.inflateToDiskUsingResourceFork(false)
     end
     self
   end
