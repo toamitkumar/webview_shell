@@ -18,5 +18,6 @@ Motion::Project::App.setup do |app|
 
   app.pods do
     pod "ZipKit"
+    pod "AQGridView"
   end
 end

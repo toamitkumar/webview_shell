@@ -7,8 +7,6 @@ class RootViewController < UIViewController
     background_image.image = image
     self.view.addSubview(background_image)
 
-    # addIndicator
-    # pushToQueue
     create_progress_view
     download_and_unzip
   end
@@ -30,6 +28,7 @@ class RootViewController < UIViewController
   def download_and_unzip
     p "download_and_unzip"
 
+    @progress_alert.show
     @web_view_app = App.delegate.instance_variable_get(:@webview_app)
     fetch(@web_view_app.url, @web_view_app.zip_path)
     @web_view_app.unzip_and_update
@@ -66,24 +65,18 @@ class RootViewController < UIViewController
   end
 
   def create_progress_view
-    progress_alert = UIAlertView.alloc.initWithTitle("Downloading", message:"Please wait...", delegate:self, cancelButtonTitle:"Cancel", otherButtonTitles:nil)
+    @progress_alert = UIAlertView.alloc.initWithTitle("Preparing to Download", message:"Please wait...", delegate:self, cancelButtonTitle:nil, otherButtonTitles:nil)
 
-    progress_view = UIProgressView.allow.initiWithFrame(CGRectMake(30.0, 80.0, 225.0, 90.0))
-    
-
+    @progress_view = UIProgressView.alloc.initWithFrame(CGRectMake(30.0, 80.0, 225.0, 90.0))
+    @progress_view.setProgressViewStyle(UIProgressViewStyleBar)
+    @progress_alert.addSubview(@progress_view)
   end
 
   def fetch(url, zip_path)
-    @response_data = 
     ns_url_request = NSURLRequest.requestWithURL(NSURL.URLWithString(url))
     ns_url_connection = NSURLConnection.alloc.initWithRequest(ns_url_request, delegate:self)
 
     ns_url_connection.start
-
-    # zip_data = NSData.dataWithContentsOfURL(NSURL.URLWithString(url))
-
-    # file_manager = NSFileManager.defaultManager
-    # file_manager.createFileAtPath(zip_path, contents:zip_data, attributes:nil)
   end
 
 
@@ -92,6 +85,7 @@ class RootViewController < UIViewController
     p "didReceiveResponse"
     @web_view_app.response_data.setLength(0)
     @file_size = NSNumber.numberWithLong(response.expectedContentLength)
+    @progress_alert.title = "Downloading"
   end
 
   def connection(connection, didReceiveData:data)
@@ -100,7 +94,7 @@ class RootViewController < UIViewController
     current_length = NSNumber.numberWithLong(@web_view_app.response_data.length)
     progress = current_length.floatValue / @file_size
 
-    # @progress_view.progress = progress
+    @progress_view.progress = progress
   end
 
   def connection(connection, didFailWithError:error)
@@ -109,6 +103,7 @@ class RootViewController < UIViewController
 
   def connectionDidFinishLoading(connection)
     p "Completed download"
+    @progress_alert.dismissWithClickedButtonIndex(0, animated:true)
 
     file_manager = NSFileManager.defaultManager
     file_manager.createFileAtPath(@web_view_app.zip_path, contents:@web_view_app.response_data, attributes:nil)

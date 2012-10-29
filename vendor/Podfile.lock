@@ -1,5 +1,7 @@
 PODS:
+  - AQGridView (1.3)
   - ZipKit (0.0.1)
 
 DEPENDENCIES:
+  - AQGridView
   - ZipKit
