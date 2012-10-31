@@ -1,29 +1,64 @@
 <?xml version='1.0'?>
 <signatures version='1.0'>
-<constant name='AQGridViewSelectionDidChangeNotification' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKArchiveFileExtension' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKCDHeaderFixedDataLength' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKCDHeaderMagicNumber' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKCDTrailer64FixedDataLength' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKCDTrailer64LocatorFixedDataLength' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKCDTrailer64LocatorMagicNumber' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKCDTrailer64MagicNumber' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKCDTrailerFixedDataLength' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKCDTrailerMagicNumber' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKDotUnderscore' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKExpansionDirectoryName' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKFileAttributesKey' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKFileDataKey' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKLFHeaderFixedDataLength' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKLFHeaderMagicNumber' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKLogLevelKey' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKLogToFileKey' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKMacOSXDirectory' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKNotificationIterations' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKPathKey' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKPathsKey' const='true' type='@' declared_type='NSString*'/>
-<constant name='ZKZipBlockSize' const='true' type='I' declared_type='NSUInteger'/>
-<constant name='ZKusingResourceForkKey' const='true' type='@' declared_type='NSString*'/>
+<constant name='AQGridViewSelectionDidChangeNotification' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFAttribute' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFCalendarDate' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFDatatype' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFDomainKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFKeys' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFMemoryDatabase' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFNanoObjectBehaviorException' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFNanoStoreErrorKey' type='i' declared_type='NSInteger' const='true'/>
+<constant name='NSFNanoStoreUnableToManipulateStoreException' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFNonConformingNanoObjectProtocolException' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFObjectClass' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFP_ColumnIdentifier' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFP_DatatypeIdentifier' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFP_FullDatatypeIdentifier' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFP_SchemaTable' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFP_TableIdentifier' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFPlist' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFRowIDColumnName' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFTemporaryDatabase' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFUnexpectedParameterException' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFValue' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFValues' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSFVersionKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_InvalidParameterDataCodeKey' type='i' declared_type='NSInteger' const='true'/>
+<constant name='NSF_Private_MacOSXErrorCodeKey' type='i' declared_type='NSInteger' const='true'/>
+<constant name='NSF_Private_NSFKeys_NSFKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_NSFKeys_NSFPlist' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_NSFNanoBag_NSFKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_NSFNanoBag_NSFObjectKeys' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_NSFNanoBag_Name' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_NSFValues_NSFAttribute' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_NSFValues_NSFKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_NSFValues_NSFValue' type='@' declared_type='NSString*' const='true'/>
+<constant name='NSF_Private_ToDeleteTableKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKArchiveFileExtension' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKCDHeaderFixedDataLength' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKCDHeaderMagicNumber' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKCDTrailer64FixedDataLength' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKCDTrailer64LocatorFixedDataLength' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKCDTrailer64LocatorMagicNumber' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKCDTrailer64MagicNumber' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKCDTrailerFixedDataLength' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKCDTrailerMagicNumber' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKDotUnderscore' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKExpansionDirectoryName' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKFileAttributesKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKFileDataKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKLFHeaderFixedDataLength' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKLFHeaderMagicNumber' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKLogLevelKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKLogToFileKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKMacOSXDirectory' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKNotificationIterations' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKPathKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKPathsKey' type='@' declared_type='NSString*' const='true'/>
+<constant name='ZKZipBlockSize' type='I' declared_type='NSUInteger' const='true'/>
+<constant name='ZKusingResourceForkKey' type='@' declared_type='NSString*' const='true'/>
 <enum name='AQGridViewCellSelectionStyleBlue' value='1'/>
 <enum name='AQGridViewCellSelectionStyleBlueGray' value='3'/>
 <enum name='AQGridViewCellSelectionStyleGlow' value='6'/>
@@ -52,6 +87,60 @@
 <enum name='AQGridViewUpdateActionInsert' value='0'/>
 <enum name='AQGridViewUpdateActionMove' value='2'/>
 <enum name='AQGridViewUpdateActionReload' value='3'/>
+<enum name='CacheAllData' value='1'/>
+<enum name='CacheDataOnDemand' value='2'/>
+<enum name='DoNotCacheData' value='3'/>
+<enum name='JournalModeDelete' value='0'/>
+<enum name='JournalModeMemory' value='3'/>
+<enum name='JournalModeOFF' value='5'/>
+<enum name='JournalModePersist' value='2'/>
+<enum name='JournalModeTruncate' value='1'/>
+<enum name='JournalModeWAL' value='4'/>
+<enum name='NSFAfterDate' value='3'/>
+<enum name='NSFAnd' value='1'/>
+<enum name='NSFAttributeColumn' value='2'/>
+<enum name='NSFAverage' value='1'/>
+<enum name='NSFBeforeDate' value='1'/>
+<enum name='NSFBeginsWith' value='1'/>
+<enum name='NSFContains' value='2'/>
+<enum name='NSFCount' value='2'/>
+<enum name='NSFEncodingUTF16' value='2'/>
+<enum name='NSFEncodingUTF8' value='1'/>
+<enum name='NSFEncodingUnknown' value='3'/>
+<enum name='NSFEndsWith' value='3'/>
+<enum name='NSFEngineProcessingDefaultMode' value='1'/>
+<enum name='NSFEngineProcessingFastMode' value='2'/>
+<enum name='NSFEqualTo' value='0'/>
+<enum name='NSFGreaterThan' value='8'/>
+<enum name='NSFInsensitiveBeginsWith' value='5'/>
+<enum name='NSFInsensitiveContains' value='6'/>
+<enum name='NSFInsensitiveEndsWith' value='7'/>
+<enum name='NSFInsensitiveEqualTo' value='4'/>
+<enum name='NSFKeyColumn' value='1'/>
+<enum name='NSFLessThan' value='9'/>
+<enum name='NSFMax' value='3'/>
+<enum name='NSFMemoryStoreType' value='1'/>
+<enum name='NSFMin' value='4'/>
+<enum name='NSFNanoTypeData' value='1'/>
+<enum name='NSFNanoTypeDate' value='3'/>
+<enum name='NSFNanoTypeNumber' value='4'/>
+<enum name='NSFNanoTypeRowUID' value='0'/>
+<enum name='NSFNanoTypeString' value='2'/>
+<enum name='NSFNanoTypeUnknown' value='-1'/>
+<enum name='NSFOnDate' value='2'/>
+<enum name='NSFOr' value='2'/>
+<enum name='NSFPersistentStoreType' value='3'/>
+<enum name='NSFReturnKeys' value='2'/>
+<enum name='NSFReturnObjects' value='1'/>
+<enum name='NSFTemporaryStoreType' value='2'/>
+<enum name='NSFTotal' value='5'/>
+<enum name='NSFValueColumn' value='3'/>
+<enum name='SynchronousModeFull' value='2'/>
+<enum name='SynchronousModeNormal' value='1'/>
+<enum name='SynchronousModeOff' value='0'/>
+<enum name='TempStoreModeDefault' value='0'/>
+<enum name='TempStoreModeFile' value='1'/>
+<enum name='TempStoreModeMemory' value='2'/>
 <enum name='ZKLogLevelAll' value='0'/>
 <enum name='ZKLogLevelDebug' value='1'/>
 <enum name='ZKLogLevelError' value='2'/>
@@ -60,6 +149,25 @@
 <enum name='zkCancelled' value='0'/>
 <enum name='zkFailed' value='-1'/>
 <enum name='zkSucceeded' value='1'/>
+<function name='NSFIsDebugOn'>
+<retval type='B' declared_type='BOOL'/>
+</function>
+<function name='NSFNanoDatatypeFromString'>
+<arg name='aNanoDatatype' type='@' declared_type='NSString*'/>
+<retval type='i' declared_type='NSFNanoDatatype'/>
+</function>
+<function name='NSFSetIsDebugOn'>
+<arg name='flag' type='B' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</function>
+<function name='NSFStringFromMatchType'>
+<arg name='aMatchType' type='i' declared_type='NSFMatchType'/>
+<retval type='@' declared_type='NSString*'/>
+</function>
+<function name='NSFStringFromNanoDataType'>
+<arg name='aNanoDatatype' type='i' declared_type='NSFNanoDatatype'/>
+<retval type='@' declared_type='NSString*'/>
+</function>
 <class name='AQGridView'>
 <method selector='allowsSelection'>
 <retval type='B' declared_type='BOOL'/>
@@ -68,7 +176,7 @@
 <retval type='@' declared_type='NSSet*'/>
 </method>
 <method selector='animationWillRevealItemsAtIndices:'>
-<arg name='indices' index='0' type='{_NSRange=II}' declared_type='NSRange'/>
+<arg name='indices' type='{_NSRange=II}' index='0' declared_type='NSRange'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='backgroundView'>
@@ -84,11 +192,11 @@
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='cellForItemAtIndex:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='@' declared_type='AQGridViewCell*'/>
 </method>
 <method selector='cellForItemAtPoint:'>
-<arg name='point' index='0' type='{CGPoint=ff}' declared_type='CGPoint'/>
+<arg name='point' type='{CGPoint=ff}' index='0' declared_type='CGPoint'/>
 <retval type='@' declared_type='AQGridViewCell*'/>
 </method>
 <method selector='clipsContentWidthToBounds'>
@@ -98,12 +206,12 @@
 <retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='createPreparedCellForIndex:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='@' declared_type='AQGridViewCell*'/>
 </method>
 <method selector='createPreparedCellForIndex:usingGridData:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
-<arg name='gridData' index='1' type='@' declared_type='AQGridViewData*'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='gridData' type='@' index='1' declared_type='AQGridViewData*'/>
 <retval type='@' declared_type='AQGridViewCell*'/>
 </method>
 <method selector='dataSource'>
@@ -113,44 +221,44 @@
 <retval type='@' declared_type='id'/>
 </method>
 <method selector='delegateWillDisplayCell:atIndex:'>
-<arg name='cell' index='0' type='@' declared_type='AQGridViewCell*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='cell' type='@' index='0' declared_type='AQGridViewCell*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='deleteItemsAtIndices:withAnimation:'>
-<arg name='indices' index='0' type='@' declared_type='NSIndexSet*'/>
-<arg name='animation' index='1' type='i' declared_type='AQGridViewItemAnimation'/>
+<arg name='indices' type='@' index='0' declared_type='NSIndexSet*'/>
+<arg name='animation' type='i' index='1' declared_type='AQGridViewItemAnimation'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='deleteVisibleCell:atIndex:appendingNewCell:'>
-<arg name='cell' index='0' type='@' declared_type='AQGridViewCell*'/>
-<arg name='visibleCellListIndex' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='newCell' index='2' type='@' declared_type='AQGridViewCell*'/>
+<arg name='cell' type='@' index='0' declared_type='AQGridViewCell*'/>
+<arg name='visibleCellListIndex' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='newCell' type='@' index='2' declared_type='AQGridViewCell*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='dequeueReusableCellWithIdentifier:'>
-<arg name='reuseIdentifier' index='0' type='@' declared_type='NSString*'/>
+<arg name='reuseIdentifier' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='AQGridViewCell*'/>
 </method>
 <method selector='deselectItemAtIndex:animated:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
-<arg name='animated' index='1' type='B' declared_type='BOOL'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='animated' type='B' index='1' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='doAddVisibleCell:'>
-<arg name='cell' index='0' type='@' declared_type='UIView*'/>
+<arg name='cell' type='@' index='0' declared_type='UIView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='endUpdates'>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='ensureCellInVisibleList:'>
-<arg name='cell' index='0' type='@' declared_type='AQGridViewCell*'/>
+<arg name='cell' type='@' index='0' declared_type='AQGridViewCell*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='fixCellFrame:forGridRect:'>
-<arg name='cellFrame' index='0' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
-<arg name='gridRect' index='1' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
+<arg name='cellFrame' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='0' declared_type='CGRect'/>
+<arg name='gridRect' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='1' declared_type='CGRect'/>
 <retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
 </method>
 <method selector='gridCellSize'>
@@ -166,24 +274,24 @@
 <retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
 </method>
 <method selector='indexForCell:'>
-<arg name='cell' index='0' type='@' declared_type='AQGridViewCell*'/>
+<arg name='cell' type='@' index='0' declared_type='AQGridViewCell*'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='indexForItemAtPoint:'>
-<arg name='point' index='0' type='{CGPoint=ff}' declared_type='CGPoint'/>
+<arg name='point' type='{CGPoint=ff}' index='0' declared_type='CGPoint'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='indexOfSelectedItem'>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='insertItemsAtIndices:withAnimation:'>
-<arg name='indices' index='0' type='@' declared_type='NSIndexSet*'/>
-<arg name='animation' index='1' type='i' declared_type='AQGridViewItemAnimation'/>
+<arg name='indices' type='@' index='0' declared_type='NSIndexSet*'/>
+<arg name='animation' type='i' index='1' declared_type='AQGridViewItemAnimation'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='insertVisibleCell:atIndex:'>
-<arg name='cell' index='0' type='@' declared_type='AQGridViewCell*'/>
-<arg name='visibleCellListIndex' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='cell' type='@' index='0' declared_type='AQGridViewCell*'/>
+<arg name='visibleCellListIndex' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='isAnimatingUpdates'>
@@ -199,9 +307,9 @@
 <retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='moveItemAtIndex:toIndex:withAnimation:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
-<arg name='newIndex' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='animation' index='2' type='i' declared_type='AQGridViewItemAnimation'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='newIndex' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='animation' type='i' index='2' declared_type='AQGridViewItemAnimation'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='numberOfColumns'>
@@ -214,15 +322,15 @@
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='rectForItemAtIndex:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
 </method>
 <method selector='reloadData'>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='reloadItemsAtIndices:withAnimation:'>
-<arg name='indices' index='0' type='@' declared_type='NSIndexSet*'/>
-<arg name='animation' index='1' type='i' declared_type='AQGridViewItemAnimation'/>
+<arg name='indices' type='@' index='0' declared_type='NSIndexSet*'/>
+<arg name='animation' type='i' index='1' declared_type='AQGridViewItemAnimation'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='requiresSelection'>
@@ -235,15 +343,15 @@
 <retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='scrollToItemAtIndex:atScrollPosition:animated:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
-<arg name='scrollPosition' index='1' type='i' declared_type='AQGridViewScrollPosition'/>
-<arg name='animated' index='2' type='B' declared_type='BOOL'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='scrollPosition' type='i' index='1' declared_type='AQGridViewScrollPosition'/>
+<arg name='animated' type='B' index='2' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='selectItemAtIndex:animated:scrollPosition:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
-<arg name='animated' index='1' type='B' declared_type='BOOL'/>
-<arg name='scrollPosition' index='2' type='i' declared_type='AQGridViewScrollPosition'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='animated' type='B' index='1' declared_type='BOOL'/>
+<arg name='scrollPosition' type='i' index='2' declared_type='AQGridViewScrollPosition'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='separatorColor'>
@@ -253,92 +361,92 @@
 <retval type='i' declared_type='AQGridViewCellSeparatorStyle'/>
 </method>
 <method selector='setAllowsSelection:'>
-<arg name='allowsSelection' index='0' type='B' declared_type='BOOL'/>
+<arg name='allowsSelection' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setAnimatingCells:'>
-<arg name='animatingCells' index='0' type='@' declared_type='NSSet*'/>
+<arg name='animatingCells' type='@' index='0' declared_type='NSSet*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setBackgroundView:'>
-<arg name='backgroundView' index='0' type='@' declared_type='UIView*'/>
+<arg name='backgroundView' type='@' index='0' declared_type='UIView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setBackgroundViewExtendsDown:'>
-<arg name='backgroundViewExtendsDown' index='0' type='B' declared_type='BOOL'/>
+<arg name='backgroundViewExtendsDown' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setBackgroundViewExtendsUp:'>
-<arg name='backgroundViewExtendsUp' index='0' type='B' declared_type='BOOL'/>
+<arg name='backgroundViewExtendsUp' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setClipsContentWidthToBounds:'>
-<arg name='clipsContentWidthToBounds' index='0' type='B' declared_type='BOOL'/>
+<arg name='clipsContentWidthToBounds' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setContentSizeGrowsToFillBounds:'>
-<arg name='contentSizeGrowsToFillBounds' index='0' type='B' declared_type='BOOL'/>
+<arg name='contentSizeGrowsToFillBounds' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setDataSource:'>
-<arg name='dataSource' index='0' type='@' declared_type='id'/>
+<arg name='dataSource' type='@' index='0' declared_type='id'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setDelegate:'>
-<arg name='delegate' index='0' type='@' declared_type='id'/>
+<arg name='delegate' type='@' index='0' declared_type='id'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setEditing:'>
-<arg name='editing' index='0' type='B' declared_type='BOOL'/>
+<arg name='editing' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setEditing:animated:'>
-<arg name='editing' index='0' type='B' declared_type='BOOL'/>
-<arg name='animated' index='1' type='B' declared_type='BOOL'/>
+<arg name='editing' type='B' index='0' declared_type='BOOL'/>
+<arg name='animated' type='B' index='1' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setGridFooterView:'>
-<arg name='gridFooterView' index='0' type='@' declared_type='UIView*'/>
+<arg name='gridFooterView' type='@' index='0' declared_type='UIView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setGridHeaderView:'>
-<arg name='gridHeaderView' index='0' type='@' declared_type='UIView*'/>
+<arg name='gridHeaderView' type='@' index='0' declared_type='UIView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLayoutDirection:'>
-<arg name='layoutDirection' index='0' type='i' declared_type='AQGridViewLayoutDirection'/>
+<arg name='layoutDirection' type='i' index='0' declared_type='AQGridViewLayoutDirection'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLeftContentInset:'>
-<arg name='leftContentInset' index='0' type='f' declared_type='CGFloat'/>
+<arg name='leftContentInset' type='f' index='0' declared_type='CGFloat'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setRequiresSelection:'>
-<arg name='requiresSelection' index='0' type='B' declared_type='BOOL'/>
+<arg name='requiresSelection' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setResizesCellWidthToFit:'>
-<arg name='resizesCellWidthToFit' index='0' type='B' declared_type='BOOL'/>
+<arg name='resizesCellWidthToFit' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setRightContentInset:'>
-<arg name='rightContentInset' index='0' type='f' declared_type='CGFloat'/>
+<arg name='rightContentInset' type='f' index='0' declared_type='CGFloat'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSeparatorColor:'>
-<arg name='separatorColor' index='0' type='@' declared_type='UIColor*'/>
+<arg name='separatorColor' type='@' index='0' declared_type='UIColor*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSeparatorStyle:'>
-<arg name='separatorStyle' index='0' type='i' declared_type='AQGridViewCellSeparatorStyle'/>
+<arg name='separatorStyle' type='i' index='0' declared_type='AQGridViewCellSeparatorStyle'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setUsesPagedHorizontalScrolling:'>
-<arg name='usesPagedHorizontalScrolling' index='0' type='B' declared_type='BOOL'/>
+<arg name='usesPagedHorizontalScrolling' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='updateGridViewBoundsForNewGridData:'>
-<arg name='newGridData' index='0' type='@' declared_type='AQGridViewData*'/>
+<arg name='newGridData' type='@' index='0' declared_type='AQGridViewData*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='usesPagedHorizontalScrolling'>
@@ -356,7 +464,7 @@
 <retval type='@' declared_type='UIView*'/>
 </method>
 <method selector='compare:'>
-<arg name='obj' index='0' type='@' declared_type='id'/>
+<arg name='obj' type='@' index='0' declared_type='id'/>
 <retval type='i' declared_type='NSComparisonResult'/>
 </method>
 <method selector='hash'>
@@ -366,20 +474,20 @@
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='isEqual:'>
-<arg name='o' index='0' type='@' declared_type='AQGridViewAnimatorItem*'/>
+<arg name='o' type='@' index='0' declared_type='AQGridViewAnimatorItem*'/>
 <retval type='B' declared_type='BOOL'/>
 </method>
-<method class_method='true' selector='itemWithView:index:'>
-<arg name='aView' index='0' type='@' declared_type='UIView*'/>
-<arg name='anIndex' index='1' type='I' declared_type='NSUInteger'/>
+<method selector='itemWithView:index:' class_method='true'>
+<arg name='aView' type='@' index='0' declared_type='UIView*'/>
+<arg name='anIndex' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='AQGridViewAnimatorItem*'/>
 </method>
 <method selector='setAnimatingView:'>
-<arg name='animatingView' index='0' type='@' declared_type='UIView*'/>
+<arg name='animatingView' type='@' index='0' declared_type='UIView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setIndex:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
@@ -388,7 +496,7 @@
 <retval type='@' declared_type='UIView*'/>
 </method>
 <method selector='compareOriginAgainstCell:'>
-<arg name='otherCell' index='0' type='@' declared_type='AQGridViewCell*'/>
+<arg name='otherCell' type='@' index='0' declared_type='AQGridViewCell*'/>
 <retval type='i' declared_type='NSComparisonResult'/>
 </method>
 <method selector='contentView'>
@@ -404,8 +512,8 @@
 <retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='initWithFrame:reuseIdentifier:'>
-<arg name='frame' index='0' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
-<arg name='reuseIdentifier' index='1' type='@' declared_type='NSString*'/>
+<arg name='frame' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='0' declared_type='CGRect'/>
+<arg name='reuseIdentifier' type='@' index='1' declared_type='NSString*'/>
 <retval type='@' declared_type='id'/>
 </method>
 <method selector='isEditing'>
@@ -445,70 +553,70 @@
 <retval type='i' declared_type='AQGridViewCellSeparatorStyle'/>
 </method>
 <method selector='setBackgroundView:'>
-<arg name='backgroundView' index='0' type='@' declared_type='UIView*'/>
+<arg name='backgroundView' type='@' index='0' declared_type='UIView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setDisplayIndex:'>
-<arg name='displayIndex' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='displayIndex' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setEditing:'>
-<arg name='editing' index='0' type='B' declared_type='BOOL'/>
+<arg name='editing' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setEditing:animated:'>
-<arg name='editing' index='0' type='B' declared_type='BOOL'/>
-<arg name='animated' index='1' type='B' declared_type='BOOL'/>
+<arg name='editing' type='B' index='0' declared_type='BOOL'/>
+<arg name='animated' type='B' index='1' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setHiddenForAnimation:'>
-<arg name='hiddenForAnimation' index='0' type='B' declared_type='BOOL'/>
+<arg name='hiddenForAnimation' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setHighlighted:'>
-<arg name='highlighted' index='0' type='B' declared_type='BOOL'/>
+<arg name='highlighted' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setHighlighted:animated:'>
-<arg name='highlighted' index='0' type='B' declared_type='BOOL'/>
-<arg name='animated' index='1' type='B' declared_type='BOOL'/>
+<arg name='highlighted' type='B' index='0' declared_type='BOOL'/>
+<arg name='animated' type='B' index='1' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSelected:'>
-<arg name='selected' index='0' type='B' declared_type='BOOL'/>
+<arg name='selected' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSelected:animated:'>
-<arg name='selected' index='0' type='B' declared_type='BOOL'/>
-<arg name='animated' index='1' type='B' declared_type='BOOL'/>
+<arg name='selected' type='B' index='0' declared_type='BOOL'/>
+<arg name='animated' type='B' index='1' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSelectedBackgroundView:'>
-<arg name='selectedBackgroundView' index='0' type='@' declared_type='UIView*'/>
+<arg name='selectedBackgroundView' type='@' index='0' declared_type='UIView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSelectionGlowColor:'>
-<arg name='selectionGlowColor' index='0' type='@' declared_type='UIColor*'/>
+<arg name='selectionGlowColor' type='@' index='0' declared_type='UIColor*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSelectionGlowShadowRadius:'>
-<arg name='selectionGlowShadowRadius' index='0' type='f' declared_type='CGFloat'/>
+<arg name='selectionGlowShadowRadius' type='f' index='0' declared_type='CGFloat'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSelectionStyle:'>
-<arg name='selectionStyle' index='0' type='i' declared_type='AQGridViewCellSelectionStyle'/>
+<arg name='selectionStyle' type='i' index='0' declared_type='AQGridViewCellSelectionStyle'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSeparatorColor:'>
-<arg name='separatorColor' index='0' type='@' declared_type='UIColor*'/>
+<arg name='separatorColor' type='@' index='0' declared_type='UIColor*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSeparatorEdge:'>
-<arg name='separatorEdge' index='0' type='I' declared_type='AQGridViewCellSeparatorEdge'/>
+<arg name='separatorEdge' type='I' index='0' declared_type='AQGridViewCellSeparatorEdge'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSeparatorStyle:'>
-<arg name='separatorStyle' index='0' type='i' declared_type='AQGridViewCellSeparatorStyle'/>
+<arg name='separatorStyle' type='i' index='0' declared_type='AQGridViewCellSeparatorStyle'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
@@ -520,11 +628,11 @@
 <retval type='@' declared_type='AQGridView*'/>
 </method>
 <method selector='setClearsSelectionOnViewWillAppear:'>
-<arg name='clearsSelectionOnViewWillAppear' index='0' type='B' declared_type='BOOL'/>
+<arg name='clearsSelectionOnViewWillAppear' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setGridView:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
@@ -533,30 +641,30 @@
 <retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='cellRectAtIndex:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
 </method>
 <method selector='cellRectForPoint:'>
-<arg name='point' index='0' type='{CGPoint=ff}' declared_type='CGPoint'/>
+<arg name='point' type='{CGPoint=ff}' index='0' declared_type='CGPoint'/>
 <retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
 </method>
 <method selector='cellSize'>
 <retval type='{CGSize=ff}' declared_type='CGSize'/>
 </method>
 <method selector='gridViewDidChangeBoundsSize:'>
-<arg name='boundsSize' index='0' type='{CGSize=ff}' declared_type='CGSize'/>
+<arg name='boundsSize' type='{CGSize=ff}' index='0' declared_type='CGSize'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='indicesOfCellsInRect:'>
-<arg name='rect' index='0' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
+<arg name='rect' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='0' declared_type='CGRect'/>
 <retval type='@' declared_type='NSIndexSet*'/>
 </method>
 <method selector='initWithGridView:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='@' declared_type='id'/>
 </method>
 <method selector='itemIndexForPoint:'>
-<arg name='point' index='0' type='{CGPoint=ff}' declared_type='CGPoint'/>
+<arg name='point' type='{CGPoint=ff}' index='0' declared_type='CGPoint'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='layoutDirection'>
@@ -572,7 +680,7 @@
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='pointIsInLastRow:'>
-<arg name='point' index='0' type='{CGPoint=ff}' declared_type='CGPoint'/>
+<arg name='point' type='{CGPoint=ff}' index='0' declared_type='CGPoint'/>
 <retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='rectForEntireGrid'>
@@ -585,35 +693,35 @@
 <retval type='f' declared_type='CGFloat'/>
 </method>
 <method selector='setBottomPadding:'>
-<arg name='bottomPadding' index='0' type='f' declared_type='CGFloat'/>
+<arg name='bottomPadding' type='f' index='0' declared_type='CGFloat'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setDesiredCellSize:'>
-<arg name='desiredCellSize' index='0' type='{CGSize=ff}' declared_type='CGSize'/>
+<arg name='desiredCellSize' type='{CGSize=ff}' index='0' declared_type='CGSize'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLayoutDirection:'>
-<arg name='layoutDirection' index='0' type='i' declared_type='AQGridViewLayoutDirection'/>
+<arg name='layoutDirection' type='i' index='0' declared_type='AQGridViewLayoutDirection'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLeftPadding:'>
-<arg name='leftPadding' index='0' type='f' declared_type='CGFloat'/>
+<arg name='leftPadding' type='f' index='0' declared_type='CGFloat'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setNumberOfItems:'>
-<arg name='numberOfItems' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='numberOfItems' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setReorderedIndex:'>
-<arg name='reorderedIndex' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='reorderedIndex' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setRightPadding:'>
-<arg name='rightPadding' index='0' type='f' declared_type='CGFloat'/>
+<arg name='rightPadding' type='f' index='0' declared_type='CGFloat'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setTopPadding:'>
-<arg name='topPadding' index='0' type='f' declared_type='CGFloat'/>
+<arg name='topPadding' type='f' index='0' declared_type='CGFloat'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='sizeForEntireGrid'>
@@ -625,28 +733,28 @@
 </class>
 <class name='AQGridViewUpdateInfo'>
 <method selector='animateCellUpdatesUsingVisibleContentRect:'>
-<arg name='contentRect' index='0' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
+<arg name='contentRect' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='0' declared_type='CGRect'/>
 <retval type='@' declared_type='NSSet*'/>
 </method>
 <method selector='cleanupUpdateItems'>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='initWithOldGridData:forGridView:'>
-<arg name='oldGridData' index='0' type='@' declared_type='AQGridViewData*'/>
-<arg name='gridView' index='1' type='@' declared_type='AQGridView*'/>
+<arg name='oldGridData' type='@' index='0' declared_type='AQGridViewData*'/>
+<arg name='gridView' type='@' index='1' declared_type='AQGridView*'/>
 <retval type='@' declared_type='id'/>
 </method>
 <method selector='moveItemAtIndex:toIndex:withAnimation:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='animation' index='2' type='i' declared_type='AQGridViewItemAnimation'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='animation' type='i' index='2' declared_type='AQGridViewItemAnimation'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='newGridViewData'>
 <retval type='@' declared_type='AQGridViewData*'/>
 </method>
 <method selector='newIndexForOldIndex:'>
-<arg name='oldIndex' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='oldIndex' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='numberOfItemsAfterUpdates'>
@@ -668,9 +776,9 @@
 <retval type='@' declared_type='NSArray*'/>
 </method>
 <method selector='updateItemsAtIndices:updateAction:withAnimation:'>
-<arg name='indices' index='0' type='@' declared_type='NSIndexSet*'/>
-<arg name='action' index='1' type='i' declared_type='AQGridViewUpdateAction'/>
-<arg name='animation' index='2' type='i' declared_type='AQGridViewItemAnimation'/>
+<arg name='indices' type='@' index='0' declared_type='NSIndexSet*'/>
+<arg name='action' type='i' index='1' declared_type='AQGridViewUpdateAction'/>
+<arg name='animation' type='i' index='2' declared_type='AQGridViewItemAnimation'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
@@ -682,20 +790,20 @@
 <retval type='i' declared_type='AQGridViewItemAnimation'/>
 </method>
 <method selector='compare:'>
-<arg name='other' index='0' type='@' declared_type='AQGridViewUpdateItem*'/>
+<arg name='other' type='@' index='0' declared_type='AQGridViewUpdateItem*'/>
 <retval type='i' declared_type='NSComparisonResult'/>
 </method>
 <method selector='index'>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='initWithIndex:action:animation:'>
-<arg name='index' index='0' type='I' declared_type='NSUInteger'/>
-<arg name='action' index='1' type='i' declared_type='AQGridViewUpdateAction'/>
-<arg name='animation' index='2' type='i' declared_type='AQGridViewItemAnimation'/>
+<arg name='index' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='action' type='i' index='1' declared_type='AQGridViewUpdateAction'/>
+<arg name='animation' type='i' index='2' declared_type='AQGridViewItemAnimation'/>
 <retval type='@' declared_type='id'/>
 </method>
 <method selector='inverseCompare:'>
-<arg name='other' index='0' type='@' declared_type='AQGridViewUpdateItem*'/>
+<arg name='other' type='@' index='0' declared_type='AQGridViewUpdateItem*'/>
 <retval type='i' declared_type='NSComparisonResult'/>
 </method>
 <method selector='newIndex'>
@@ -708,11 +816,11 @@
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='setNewIndex:'>
-<arg name='newIndex' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='newIndex' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setOffset:'>
-<arg name='offset' index='0' type='i' declared_type='NSInteger'/>
+<arg name='offset' type='i' index='0' declared_type='NSInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
@@ -721,40 +829,40 @@
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='zk_crc32:'>
-<arg name='crc' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='crc' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='zk_deflate'>
 <retval type='@' declared_type='NSData*'/>
 </method>
 <method selector='zk_hostBoolOffsetBy:'>
-<arg name='offset' index='0' type='^I' declared_type='NSUInteger*'/>
+<arg name='offset' type='^I' index='0' declared_type='NSUInteger*'/>
 <retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='zk_hostInt16OffsetBy:'>
-<arg name='offset' index='0' type='^I' declared_type='NSUInteger*'/>
+<arg name='offset' type='^I' index='0' declared_type='NSUInteger*'/>
 <retval type='S' declared_type='UInt16'/>
 </method>
 <method selector='zk_hostInt32OffsetBy:'>
-<arg name='offset' index='0' type='^I' declared_type='NSUInteger*'/>
+<arg name='offset' type='^I' index='0' declared_type='NSUInteger*'/>
 <retval type='L' declared_type='UInt32'/>
 </method>
 <method selector='zk_hostInt64OffsetBy:'>
-<arg name='offset' index='0' type='^I' declared_type='NSUInteger*'/>
+<arg name='offset' type='^I' index='0' declared_type='NSUInteger*'/>
 <retval type='Q' declared_type='UInt64'/>
 </method>
 <method selector='zk_inflate'>
 <retval type='@' declared_type='NSData*'/>
 </method>
 <method selector='zk_stringOffsetBy:length:'>
-<arg name='offset' index='0' type='^I' declared_type='NSUInteger*'/>
-<arg name='length' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='offset' type='^I' index='0' declared_type='NSUInteger*'/>
+<arg name='length' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='NSString*'/>
 </method>
 </class>
 <class name='NSDate'>
-<method class_method='true' selector='zk_dateWithDosDate:'>
-<arg name='dosDate' index='0' type='I' declared_type='NSUInteger'/>
+<method selector='zk_dateWithDosDate:' class_method='true'>
+<arg name='dosDate' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='@' declared_type='NSDate*'/>
 </method>
 <method selector='zk_dosDate'>
@@ -768,71 +876,1162 @@
 <method selector='zk_totalFileSize'>
 <retval type='Q' declared_type='unsigned long long'/>
 </method>
-<method class_method='true' selector='zk_totalSizeAndCountDictionaryWithSize:andItemCount:'>
-<arg name='size' index='0' type='Q' declared_type='unsigned long long'/>
-<arg name='count' index='1' type='Q' declared_type='unsigned long long'/>
+<method selector='zk_totalSizeAndCountDictionaryWithSize:andItemCount:' class_method='true'>
+<arg name='size' type='Q' index='0' declared_type='unsigned long long'/>
+<arg name='count' type='Q' index='1' declared_type='unsigned long long'/>
 <retval type='@' declared_type='NSDictionary*'/>
 </method>
 </class>
+<class name='NSFNanoBag'>
+<method selector='_inflateObjectsWithKeys:'>
+<arg name='someKeys' type='@' index='0' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_saveInStore:error:'>
+<arg name='someStore' type='@' index='0' declared_type='NSFNanoStore*'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_setStore:'>
+<arg name='aStore' type='@' index='0' declared_type='NSFNanoStore*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='addObject:error:'>
+<arg name='theObject' type='@' index='0' declared_type='id'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='addObjectsFromArray:error:'>
+<arg name='theObjects' type='@' index='0' declared_type='NSArray*'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='bag' class_method='true'>
+<retval type='@' declared_type='NSFNanoBag*'/>
+</method>
+<method selector='bagWithName:' class_method='true'>
+<arg name='theName' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='bagWithName:andObjects:' class_method='true'>
+<arg name='theName' type='@' index='0' declared_type='NSString*'/>
+<arg name='theObjects' type='@' index='1' declared_type='NSArray*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='bagWithObjects:' class_method='true'>
+<arg name='theObjects' type='@' index='0' declared_type='NSArray*'/>
+<retval type='@' declared_type='NSFNanoBag*'/>
+</method>
+<method selector='count'>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method selector='deflateBag'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='dictionaryRepresentation'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='hasUnsavedChanges'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='inflateBag'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='initBagWithName:andObjects:'>
+<arg name='theName' type='@' index='0' declared_type='NSString*'/>
+<arg name='someObjects' type='@' index='1' declared_type='NSArray*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isEqualToNanoBag:'>
+<arg name='otherNanoBag' type='@' index='0' declared_type='NSFNanoBag*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='key'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='name'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='reloadBagWithError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='removeAllObjects'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeObject:'>
+<arg name='theObject' type='@' index='0' declared_type='id'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeObjectWithKey:'>
+<arg name='theObjectKey' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeObjectsInArray:'>
+<arg name='theObjects' type='@' index='0' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeObjectsWithKeysInArray:'>
+<arg name='theKeys' type='@' index='0' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removedObjects'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='saveAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='savedObjects'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='setName:'>
+<arg name='name' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setStore:'>
+<arg name='store' type='@' index='0' declared_type='NSFNanoStore*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='store'>
+<retval type='@' declared_type='NSFNanoStore*'/>
+</method>
+<method selector='undoChangesWithError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='unsavedObjects'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+</class>
+<class name='NSFNanoEngine'>
+<method selector='NSFEncodingTypeToNSString:' class_method='true'>
+<arg name='value' type='i' index='0' declared_type='NSFEncodingType'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='NSFP_ROWIDPresenceLocation:datatypes:'>
+<arg name='tableColumns' type='@' index='0' declared_type='NSArray*'/>
+<arg name='datatypes' type='@' index='1' declared_type='NSArray*'/>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='NSFP_beginTransactionMode:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSString*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='NSFP_cacheMethodToString'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='NSFP_createTable:withColumns:datatypes:isTemporary:'>
+<arg name='table' type='@' index='0' declared_type='NSString*'/>
+<arg name='tableColumns' type='@' index='1' declared_type='NSArray*'/>
+<arg name='tableDatatypes' type='@' index='2' declared_type='NSArray*'/>
+<arg name='isTemporaryFlag' type='B' index='3' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='NSFP_datatypeForColumn:'>
+<arg name='tableAndColumn' type='@' index='0' declared_type='NSString*'/>
+<retval type='i' declared_type='NSFNanoDatatype'/>
+</method>
+<method selector='NSFP_datatypeForTable:column:'>
+<arg name='table' type='@' index='0' declared_type='NSString*'/>
+<arg name='column' type='@' index='1' declared_type='NSString*'/>
+<retval type='i' declared_type='NSFNanoDatatype'/>
+</method>
+<method selector='NSFP_decodeQuantum:andSource:' class_method='true'>
+<arg name='dest' type='*' index='0' declared_type='unsigned char*'/>
+<arg name='src' type='*' index='1' declared_type='char*' const='true'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='NSFP_flattenAllTables'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='NSFP_insertStringValues:forColumns:table:'>
+<arg name='values' type='@' index='0' declared_type='NSArray*'/>
+<arg name='columns' type='@' index='1' declared_type='NSArray*'/>
+<arg name='table' type='@' index='2' declared_type='NSString*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='NSFP_installCommitCallback'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='NSFP_isColumnROWIDAlias:forTable:'>
+<arg name='column' type='@' index='0' declared_type='NSString*'/>
+<arg name='table' type='@' index='1' declared_type='NSString*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='NSFP_nestedDescriptionWithPrefixedSpace:'>
+<arg name='prefixedSpace' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='NSFP_prefixWithDotDelimiter:'>
+<arg name='tableAndColumn' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='NSFP_prepareSQLite3Statement:theSQLStatement:'>
+<arg name='aStatement' type='^^{sqlite3_stmt}' index='0' declared_type='sqlite3_stmt**'/>
+<arg name='aSQLQuery' type='@' index='1' declared_type='NSString*'/>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='NSFP_rebuildDatatypeCache'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='NSFP_removeColumn:fromTable:'>
+<arg name='column' type='@' index='0' declared_type='NSString*'/>
+<arg name='table' type='@' index='1' declared_type='NSString*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='NSFP_setFullColumnNamesEnabled'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='NSFP_sharedROWIDKeywords' class_method='true'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='NSFP_sqlString:appendingTags:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSMutableString*'/>
+<arg name='columns' type='@' index='1' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='NSFP_sqlString:appendingTags:quoteTags:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSMutableString*'/>
+<arg name='tags' type='@' index='1' declared_type='NSArray*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='NSFP_sqlString:forTable:withColumns:datatypes:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSMutableString*'/>
+<arg name='table' type='@' index='1' declared_type='NSString*'/>
+<arg name='columns' type='@' index='2' declared_type='NSArray*'/>
+<arg name='datatypes' type='@' index='3' declared_type='NSArray*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='NSFP_stripBitsFromExtendedResultCode:' class_method='true'>
+<arg name='extendedResult' type='i' index='0' declared_type='int'/>
+<retval type='i' declared_type='int'/>
+</method>
+<method selector='NSFP_suffixWithDotDelimiter:'>
+<arg name='tableAndColumn' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='NSFP_uninstallCommitCallback'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='NSStringToNSFEncodingType:' class_method='true'>
+<arg name='value' type='@' index='0' declared_type='NSString*'/>
+<retval type='i' declared_type='NSFEncodingType'/>
+</method>
+<method selector='_plistToDictionary:' class_method='true'>
+<arg name='aPlist' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='allTables'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='beginDeferredTransaction'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='beginTransaction'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='busyTimeout'>
+<retval type='I' declared_type='unsigned int'/>
+</method>
+<method selector='cacheMethod'>
+<retval type='i' declared_type='NSFCacheMethod'/>
+</method>
+<method selector='cacheSize'>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method selector='close'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='columnsForTable:'>
+<arg name='theTable' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='commitTransaction'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='compact'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='createIndexForColumn:table:isUnique:'>
+<arg name='theColumn' type='@' index='0' declared_type='NSString*'/>
+<arg name='theTable' type='@' index='1' declared_type='NSString*'/>
+<arg name='isUnique' type='B' index='2' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='createTable:withColumns:datatypes:'>
+<arg name='theTable' type='@' index='0' declared_type='NSString*'/>
+<arg name='theColumns' type='@' index='1' declared_type='NSArray*'/>
+<arg name='theDatatypes' type='@' index='2' declared_type='NSArray*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='databaseWithPath:' class_method='true'>
+<arg name='thePath' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='datatypesForTable:'>
+<arg name='theTable' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='decodeDataFromBase64:' class_method='true'>
+<arg name='theEncodedData' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSData*'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='dropIndex:'>
+<arg name='theIndex' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='dropTable:'>
+<arg name='theTable' type='@' index='0' declared_type='NSString*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='encodeDataToBase64:' class_method='true'>
+<arg name='theData' type='@' index='0' declared_type='NSData*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='encoding'>
+<retval type='i' declared_type='NSFEncodingType'/>
+</method>
+<method selector='executeSQL:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoResult*'/>
+</method>
+<method selector='indexedColumnsForTable:'>
+<arg name='theTable' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='indexes'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='initWithPath:'>
+<arg name='thePath' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='integrityCheck'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isDatabaseOpen'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='isTransactionActive'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='journalModeAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='i' declared_type='NSFJournalModeMode'/>
+</method>
+<method selector='maxRowUIDForTable:'>
+<arg name='theTable' type='@' index='0' declared_type='NSString*'/>
+<retval type='q' declared_type='long long'/>
+</method>
+<method selector='nanoStoreEngineVersion' class_method='true'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='openWithCacheMethod:useFastMode:'>
+<arg name='theCacheMethod' type='i' index='0' declared_type='NSFCacheMethod'/>
+<arg name='useFastMode' type='B' index='1' declared_type='BOOL'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='pageSize'>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method selector='path'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='recommendedCacheSize' class_method='true'>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method selector='rollbackTransaction'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setBusyTimeout:'>
+<arg name='theTimeout' type='I' index='0' declared_type='unsigned int'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCacheMethod:'>
+<arg name='cacheMethod' type='i' index='0' declared_type='NSFCacheMethod'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCacheSize:'>
+<arg name='numberOfPages' type='I' index='0' declared_type='NSUInteger'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setEncodingType:'>
+<arg name='theEncodingType' type='i' index='0' declared_type='NSFEncodingType'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setJournalMode:'>
+<arg name='theMode' type='i' index='0' declared_type='NSFJournalModeMode'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setPageSize:'>
+<arg name='numberOfBytes' type='I' index='0' declared_type='NSUInteger'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setSynchronousMode:'>
+<arg name='theSynchronousMode' type='i' index='0' declared_type='NSFSynchronousMode'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTempStoreMode:'>
+<arg name='theTempStoreMode' type='i' index='0' declared_type='NSFTempStoreMode'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sharedNanoStoreEngineDatatypes' class_method='true'>
+<retval type='@' declared_type='NSSet*'/>
+</method>
+<method selector='sqlite'>
+<retval type='^{sqlite3=}' declared_type='sqlite3*'/>
+</method>
+<method selector='sqliteVersion' class_method='true'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='stringWithUUID' class_method='true'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='synchronousMode'>
+<retval type='i' declared_type='NSFSynchronousMode'/>
+</method>
+<method selector='systemPageSize' class_method='true'>
+<retval type='i' declared_type='NSInteger'/>
+</method>
+<method selector='tables'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='tempStoreMode'>
+<retval type='i' declared_type='NSFTempStoreMode'/>
+</method>
+<method selector='temporaryTables'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+</class>
+<class name='NSFNanoExpression'>
+<method selector='addPredicate:withOperator:'>
+<arg name='thePredicate' type='@' index='0' declared_type='NSFNanoPredicate*'/>
+<arg name='theOperator' type='i' index='1' declared_type='NSFOperator'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='expressionWithPredicate:' class_method='true'>
+<arg name='thePredicate' type='@' index='0' declared_type='NSFNanoPredicate*'/>
+<retval type='@' declared_type='NSFNanoExpression*'/>
+</method>
+<method selector='initWithPredicate:'>
+<arg name='thePredicate' type='@' index='0' declared_type='NSFNanoPredicate*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='operators'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='predicates'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+</class>
+<class name='NSFNanoObject'>
+<method selector='_setOriginalClassString:'>
+<arg name='theClassString' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='addEntriesFromDictionary:'>
+<arg name='otherDictionary' type='@' index='0' declared_type='NSDictionary*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='dictionaryRepresentation'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='info'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='initFromDictionaryRepresentation:'>
+<arg name='theDictionary' type='@' index='0' declared_type='NSDictionary*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='initFromDictionaryRepresentation:key:'>
+<arg name='theDictionary' type='@' index='0' declared_type='NSDictionary*'/>
+<arg name='theKey' type='@' index='1' declared_type='NSString*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isEqualToNanoObject:'>
+<arg name='otherNanoObject' type='@' index='0' declared_type='NSFNanoObject*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='key'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='nanoObject' class_method='true'>
+<retval type='@' declared_type='NSFNanoObject*'/>
+</method>
+<method selector='nanoObjectWithDictionary:' class_method='true'>
+<arg name='theDictionary' type='@' index='0' declared_type='NSDictionary*'/>
+<retval type='@' declared_type='NSFNanoObject*'/>
+</method>
+<method selector='nanoObjectWithDictionary:key:' class_method='true'>
+<arg name='theDictionary' type='@' index='0' declared_type='NSDictionary*'/>
+<arg name='theKey' type='@' index='1' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoObject*'/>
+</method>
+<method selector='objectForKey:'>
+<arg name='aKey' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='originalClassString'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='removeAllObjects'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeObjectForKey:'>
+<arg name='aKey' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeObjectsForKeys:'>
+<arg name='keyArray' type='@' index='0' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setObject:forKey:'>
+<arg name='anObject' type='@' index='0' declared_type='id'/>
+<arg name='aKey' type='@' index='1' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='NSFNanoPredicate'>
+<method selector='column'>
+<retval type='i' declared_type='NSFTableColumnType'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='initWithColumn:matching:value:'>
+<arg name='theType' type='i' index='0' declared_type='NSFTableColumnType'/>
+<arg name='theMatch' type='i' index='1' declared_type='NSFMatchType'/>
+<arg name='theValue' type='@' index='2' declared_type='NSString*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='match'>
+<retval type='i' declared_type='NSFMatchType'/>
+</method>
+<method selector='predicateWithColumn:matching:value:' class_method='true'>
+<arg name='theType' type='i' index='0' declared_type='NSFTableColumnType'/>
+<arg name='theMatch' type='i' index='1' declared_type='NSFMatchType'/>
+<arg name='theValue' type='@' index='2' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoPredicate*'/>
+</method>
+<method selector='value'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='NSFNanoResult'>
+<method selector='_calculateNumberOfRows'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_initWithDictionary:'>
+<arg name='results' type='@' index='0' declared_type='NSDictionary*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='_initWithError:'>
+<arg name='error' type='@' index='0' declared_type='NSError*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='_reset'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_resultWithDictionary:' class_method='true'>
+<arg name='results' type='@' index='0' declared_type='NSDictionary*'/>
+<retval type='@' declared_type='NSFNanoResult*'/>
+</method>
+<method selector='_resultWithError:' class_method='true'>
+<arg name='error' type='@' index='0' declared_type='NSError*'/>
+<retval type='@' declared_type='NSFNanoResult*'/>
+</method>
+<method selector='_setError:'>
+<arg name='error' type='@' index='0' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='columns'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='error'>
+<retval type='@' declared_type='NSError*'/>
+</method>
+<method selector='firstValue'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='numberOfRows'>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method selector='setError:'>
+<arg name='error' type='@' index='0' declared_type='NSError*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='valueAtIndex:forColumn:'>
+<arg name='theIndex' type='I' index='0' declared_type='NSUInteger'/>
+<arg name='theColumn' type='@' index='1' declared_type='NSString*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='valuesForColumn:'>
+<arg name='theColumn' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='writeToFile:'>
+<arg name='thePath' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='NSFNanoSearch'>
+<method selector='_dataWithKey:attribute:value:matching:'>
+<arg name='aKey' type='@' index='0' declared_type='NSString*'/>
+<arg name='anAttribute' type='@' index='1' declared_type='NSString*'/>
+<arg name='aValue' type='@' index='2' declared_type='NSString*'/>
+<arg name='match' type='i' index='3' declared_type='NSFMatchType'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='_dataWithKey:attribute:value:matching:returning:'>
+<arg name='aKey' type='@' index='0' declared_type='NSString*'/>
+<arg name='anAttribute' type='@' index='1' declared_type='NSString*'/>
+<arg name='aValue' type='@' index='2' declared_type='NSString*'/>
+<arg name='match' type='i' index='3' declared_type='NSFMatchType'/>
+<arg name='returnedObjectType' type='i' index='4' declared_type='NSFReturnType'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='_dictionaryForKeyPath:value:'>
+<arg name='keyPath' type='@' index='0' declared_type='NSString*'/>
+<arg name='value' type='@' index='1' declared_type='id'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='_prepareSQLQueryStringWithExpressions:'>
+<arg name='someExpressions' type='@' index='0' declared_type='NSArray*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_prepareSQLQueryStringWithKey:attribute:value:matching:'>
+<arg name='aKey' type='@' index='0' declared_type='NSString*'/>
+<arg name='anAttribute' type='@' index='1' declared_type='NSString*'/>
+<arg name='aValue' type='@' index='2' declared_type='id'/>
+<arg name='match' type='i' index='3' declared_type='NSFMatchType'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_prepareSQLQueryStringWithKeys:' class_method='true'>
+<arg name='someKeys' type='@' index='0' declared_type='NSArray*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_preparedSQL'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_querySegmentForAttributeColumnWithValue:matching:valueColumnWithValue:' class_method='true'>
+<arg name='anAttributeValue' type='@' index='0' declared_type='id'/>
+<arg name='match' type='i' index='1' declared_type='NSFMatchType'/>
+<arg name='aValue' type='@' index='2' declared_type='id'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_querySegmentForColumn:value:matching:' class_method='true'>
+<arg name='aColumn' type='@' index='0' declared_type='NSString*'/>
+<arg name='aValue' type='@' index='1' declared_type='id'/>
+<arg name='match' type='i' index='2' declared_type='NSFMatchType'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_quoteStrings:joiningWithDelimiter:' class_method='true'>
+<arg name='strings' type='@' index='0' declared_type='NSArray*'/>
+<arg name='delimiter' type='@' index='1' declared_type='NSString*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_resultsFromSQLQuery:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='_retrieveDataAdded:calendarDate:error:'>
+<arg name='aDateMatch' type='i' index='0' declared_type='NSFDateMatchType'/>
+<arg name='aDate' type='@' index='1' declared_type='NSDate*'/>
+<arg name='outError' type_modifier='o' type='^@' index='2' declared_type='NSError**'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='_retrieveDataWithError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='_sortResultsIfApplicable:returnType:'>
+<arg name='results' type='@' index='0' declared_type='NSDictionary*'/>
+<arg name='theReturnType' type='i' index='1' declared_type='NSFReturnType'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='aggregateOperation:onAttribute:'>
+<arg name='theFunctionType' type='i' index='0' declared_type='NSFAggregateFunctionType'/>
+<arg name='theAttribute' type='@' index='1' declared_type='NSString*'/>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+<method selector='attribute'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='attributesToBeReturned'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='executeSQL:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoResult*'/>
+</method>
+<method selector='executeSQL:returnType:error:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSString*'/>
+<arg name='theReturnType' type='i' index='1' declared_type='NSFReturnType'/>
+<arg name='outError' type_modifier='o' type='^@' index='2' declared_type='NSError**'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='explainSQL:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoResult*'/>
+</method>
+<method selector='expressions'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='filterClass'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='groupValues'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='initWithStore:'>
+<arg name='theNanoStore' type='@' index='0' declared_type='NSFNanoStore*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='key'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='match'>
+<retval type='i' declared_type='NSFMatchType'/>
+</method>
+<method selector='nanoStore'>
+<retval type='@' declared_type='NSFNanoStore*'/>
+</method>
+<method selector='reset'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='searchObjectsAdded:date:returnType:error:'>
+<arg name='theDateMatch' type='i' index='0' declared_type='NSFDateMatchType'/>
+<arg name='theDate' type='@' index='1' declared_type='NSDate*'/>
+<arg name='theReturnType' type='i' index='2' declared_type='NSFReturnType'/>
+<arg name='outError' type_modifier='o' type='^@' index='3' declared_type='NSError**'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='searchObjectsWithReturnType:error:'>
+<arg name='theReturnType' type='i' index='0' declared_type='NSFReturnType'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='searchWithStore:' class_method='true'>
+<arg name='theNanoStore' type='@' index='0' declared_type='NSFNanoStore*'/>
+<retval type='@' declared_type='NSFNanoSearch*'/>
+</method>
+<method selector='setAttribute:'>
+<arg name='attribute' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setAttributesToBeReturned:'>
+<arg name='attributesToBeReturned' type='@' index='0' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setExpressions:'>
+<arg name='expressions' type='@' index='0' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setFilterClass:'>
+<arg name='filterClass' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setGroupValues:'>
+<arg name='groupValues' type='B' index='0' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setKey:'>
+<arg name='key' type='@' index='0' declared_type='NSString*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMatch:'>
+<arg name='match' type='i' index='0' declared_type='NSFMatchType'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setNanoStore:'>
+<arg name='nanoStore' type='@' index='0' declared_type='NSFNanoStore*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSort:'>
+<arg name='sort' type='@' index='0' declared_type='NSArray*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setValue:'>
+<arg name='value' type='@' index='0' declared_type='id'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sort'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='sql'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='value'>
+<retval type='@' declared_type='id'/>
+</method>
+</class>
+<class name='NSFNanoSortDescriptor'>
+<method selector='attribute'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='initWithAttribute:ascending:'>
+<arg name='theAttribute' type='@' index='0' declared_type='NSString*'/>
+<arg name='ascending' type='B' index='1' declared_type='BOOL'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isAscending'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='sortDescriptorWithAttribute:ascending:' class_method='true'>
+<arg name='theAttribute' type='@' index='0' declared_type='NSString*'/>
+<arg name='ascending' type='B' index='1' declared_type='BOOL'/>
+<retval type='@' declared_type='NSFNanoSortDescriptor*'/>
+</method>
+</class>
+<class name='NSFNanoStore'>
+<method selector='_NSFDatatypeOfObject:'>
+<arg name='value' type='@' index='0' declared_type='id'/>
+<retval type='i' declared_type='NSFNanoDatatype'/>
+</method>
+<method selector='__storeDictionaries:forKeys:error:'>
+<arg name='someObjects' type='@' index='0' declared_type='NSArray*'/>
+<arg name='someKeys' type='@' index='1' declared_type='NSArray*'/>
+<arg name='outError' type_modifier='o' type='^@' index='2' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_addObjectsFromArray:forceSave:error:'>
+<arg name='someObjects' type='@' index='0' declared_type='NSArray*'/>
+<arg name='forceSave' type='B' index='1' declared_type='BOOL'/>
+<arg name='outError' type_modifier='o' type='^@' index='2' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_backupFileStoreToDirectoryAtPath:extension:compact:error:'>
+<arg name='aPath' type='@' index='0' declared_type='NSString*'/>
+<arg name='anExtension' type='@' index='1' declared_type='NSString*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
+<arg name='outError' type_modifier='o' type='^@' index='3' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_backupMemoryStoreToDirectoryAtPath:extension:compact:error:'>
+<arg name='aPath' type='@' index='0' declared_type='NSString*'/>
+<arg name='anExtension' type='@' index='1' declared_type='NSString*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
+<arg name='outError' type_modifier='o' type='^@' index='3' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_bindValue:forAttribute:parameterNumber:usingSQLite3Statement:'>
+<arg name='aValue' type='@' index='0' declared_type='id'/>
+<arg name='anAttribute' type='@' index='1' declared_type='NSString*'/>
+<arg name='aParamNumber' type='i' index='2' declared_type='NSInteger'/>
+<arg name='aStatement' type='^{sqlite3_stmt=}' index='3' declared_type='sqlite3_stmt*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_calendarDateToString:' class_method='true'>
+<arg name='aDate' type='@' index='0' declared_type='NSDate*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_checkNanoStoreIsReadyAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_createAndOpenDebugDatabase' class_method='true'>
+<retval type='@' declared_type='NSFNanoStore*'/>
+</method>
+<method selector='_defaultTestData' class_method='true'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='_executeSQL:'>
+<arg name='theSQLStatement' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoResult*'/>
+</method>
+<method selector='_executeSQLite3StepUsingSQLite3Statement:'>
+<arg name='aStatement' type='^{sqlite3_stmt=}' index='0' declared_type='sqlite3_stmt*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_flattenCollection:keyPath:keys:values:'>
+<arg name='someObject' type='@' index='0' declared_type='id'/>
+<arg name='aKeyPath' type='^@' index='1' declared_type='NSMutableArray**'/>
+<arg name='someKeys' type='^@' index='2' declared_type='NSMutableArray**'/>
+<arg name='someValues' type='^@' index='3' declared_type='NSMutableArray**'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_flattenCollection:keys:values:'>
+<arg name='info' type='@' index='0' declared_type='NSDictionary*'/>
+<arg name='flattenedKeys' type='^@' index='1' declared_type='NSMutableArray**'/>
+<arg name='flattenedValues' type='^@' index='2' declared_type='NSMutableArray**'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_initializePreparedStatementsWithError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_isOurTransaction'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_nestedDescriptionWithPrefixedSpace:'>
+<arg name='prefixedSpace' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='_prepareSQLite3Statement:theSQLStatement:'>
+<arg name='aStatement' type='^^{sqlite3_stmt}' index='0' declared_type='sqlite3_stmt**'/>
+<arg name='aSQLQuery' type='@' index='1' declared_type='NSString*'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_releasePreparedStatements'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_setIsOurTransaction:'>
+<arg name='value' type='B' index='0' declared_type='BOOL'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='_setupCachingSchema'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_storeDictionary:forKey:forClassNamed:usingSQLite3Statement:error:'>
+<arg name='someInfo' type='@' index='0' declared_type='NSDictionary*'/>
+<arg name='aKey' type='@' index='1' declared_type='NSString*'/>
+<arg name='classType' type='@' index='2' declared_type='NSString*'/>
+<arg name='storeValuesStatement' type='^{sqlite3_stmt=}' index='3' declared_type='sqlite3_stmt*'/>
+<arg name='outError' type_modifier='o' type='^@' index='4' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='_stringFromValue:'>
+<arg name='aValue' type='@' index='0' declared_type='id'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='addObject:error:'>
+<arg name='theObject' type='@' index='0' declared_type='id'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='addObjectsFromArray:error:'>
+<arg name='theObjects' type='@' index='0' declared_type='NSArray*'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='allObjectClasses'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='bagWithName:'>
+<arg name='theName' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoBag*'/>
+</method>
+<method selector='bags'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='bagsContainingObjectWithKey:'>
+<arg name='theKey' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='bagsWithKeysInArray:'>
+<arg name='theKeys' type='@' index='0' declared_type='NSArray*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='beginTransactionAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='clearIndexesAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='closeWithError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='commitTransactionAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='compactStoreAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='countOfObjectsOfClassNamed:'>
+<arg name='theClassName' type='@' index='0' declared_type='NSString*'/>
+<retval type='q' declared_type='long long'/>
+</method>
+<method selector='createAndOpenStoreWithType:path:error:' class_method='true'>
+<arg name='theType' type='i' index='0' declared_type='NSFNanoStoreType'/>
+<arg name='thePath' type='@' index='1' declared_type='NSString*'/>
+<arg name='outError' type_modifier='o' type='^@' index='2' declared_type='NSError**'/>
+<retval type='@' declared_type='NSFNanoStore*'/>
+</method>
+<method selector='createStoreWithType:path:' class_method='true'>
+<arg name='theType' type='i' index='0' declared_type='NSFNanoStoreType'/>
+<arg name='thePath' type='@' index='1' declared_type='NSString*'/>
+<retval type='@' declared_type='NSFNanoStore*'/>
+</method>
+<method selector='description'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='discardUnsavedChanges'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='filePath'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='hasUnsavedChanges'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='initStoreWithType:path:'>
+<arg name='theType' type='i' index='0' declared_type='NSFNanoStoreType'/>
+<arg name='thePath' type='@' index='1' declared_type='NSString*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isClosed'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='nanoEngineProcessingMode'>
+<retval type='i' declared_type='NSFEngineProcessingMode'/>
+</method>
+<method selector='nanoStoreEngine'>
+<retval type='@' declared_type='NSFNanoEngine*'/>
+</method>
+<method selector='objectsOfClassNamed:'>
+<arg name='theClassName' type='@' index='0' declared_type='NSString*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='objectsOfClassNamed:usingSortDescriptors:'>
+<arg name='theClassName' type='@' index='0' declared_type='NSString*'/>
+<arg name='theSortDescriptors' type='@' index='1' declared_type='NSArray*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='objectsWithKeysInArray:'>
+<arg name='theKeys' type='@' index='0' declared_type='NSArray*'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='openWithError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='rebuildIndexesAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='removeAllObjectsFromStoreAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='removeObject:error:'>
+<arg name='theObject' type='@' index='0' declared_type='id'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='removeObjectsInArray:error:'>
+<arg name='theObjects' type='@' index='0' declared_type='NSArray*'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='removeObjectsWithKeysInArray:error:'>
+<arg name='theKeys' type='@' index='0' declared_type='NSArray*'/>
+<arg name='outError' type_modifier='o' type='^@' index='1' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='rollbackTransactionAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='saveInterval'>
+<retval type='I' declared_type='NSUInteger'/>
+</method>
+<method selector='saveStoreAndReturnError:'>
+<arg name='outError' type_modifier='o' type='^@' index='0' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='saveStoreToDirectoryAtPath:compactDatabase:error:'>
+<arg name='thePath' type='@' index='0' declared_type='NSString*'/>
+<arg name='shouldCompact' type='B' index='1' declared_type='BOOL'/>
+<arg name='outError' type_modifier='o' type='^@' index='2' declared_type='NSError**'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setNanoEngineProcessingMode:'>
+<arg name='nanoEngineProcessingMode' type='i' index='0' declared_type='NSFEngineProcessingMode'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setNanoStoreEngine:'>
+<arg name='nanoStoreEngine' type='@' index='0' declared_type='NSFNanoEngine*'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSaveInterval:'>
+<arg name='saveInterval' type='I' index='0' declared_type='NSUInteger'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
 <class name='NSFileHandle'>
-<method class_method='true' selector='zk_newFileHandleForWritingAtPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<method selector='zk_newFileHandleForWritingAtPath:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='NSFileHandle*'/>
 </method>
 </class>
 <class name='NSFileManager'>
 <method selector='zkTotalSizeAndItemCountAtPath:usingResourceFork:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='rfFlag' index='1' type='B' declared_type='BOOL'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='rfFlag' type='B' index='1' declared_type='BOOL'/>
 <retval type='@' declared_type='NSDictionary*'/>
 </method>
 <method selector='zk_crcForPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='zk_crcForPath:invoker:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='invoker' index='1' type='@' declared_type='id'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='invoker' type='@' index='1' declared_type='id'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='zk_crcForPath:invoker:throttleThreadSleepTime:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='invoker' index='1' type='@' declared_type='id'/>
-<arg name='throttleThreadSleepTime' index='2' type='d' declared_type='NSTimeInterval'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='invoker' type='@' index='1' declared_type='id'/>
+<arg name='throttleThreadSleepTime' type='d' index='2' declared_type='NSTimeInterval'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='zk_dataSizeAtFilePath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='Q' declared_type='unsigned long long'/>
 </method>
 <method selector='zk_externalFileAttributesAtPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='zk_externalFileAttributesFor:'>
-<arg name='fileAttributes' index='0' type='@' declared_type='NSDictionary*'/>
+<arg name='fileAttributes' type='@' index='0' declared_type='NSDictionary*'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='zk_isDirAtPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='zk_isSymLinkAtPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='zk_modificationDateForPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='NSDate*'/>
 </method>
 <method selector='zk_posixPermissionsAtPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 </class>
 <class name='NSIndexSet'>
 <method selector='aq_indexesOutsideIndexSet:'>
-<arg name='otherSet' index='0' type='@' declared_type='NSIndexSet*'/>
+<arg name='otherSet' type='@' index='0' declared_type='NSIndexSet*'/>
 <retval type='@' declared_type='NSIndexSet*'/>
 </method>
 <method selector='aq_isSetContiguous'>
@@ -841,111 +2040,126 @@
 </class>
 <class name='NSMutableData'>
 <method selector='zk_appendLittleBool:'>
-<arg name='value' index='0' type='B' declared_type='BOOL'/>
+<arg name='value' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='zk_appendLittleInt16:'>
-<arg name='value' index='0' type='S' declared_type='UInt16'/>
+<arg name='value' type='S' index='0' declared_type='UInt16'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='zk_appendLittleInt32:'>
-<arg name='value' index='0' type='L' declared_type='UInt32'/>
+<arg name='value' type='L' index='0' declared_type='UInt32'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='zk_appendLittleInt64:'>
-<arg name='value' index='0' type='Q' declared_type='UInt64'/>
+<arg name='value' type='Q' index='0' declared_type='UInt64'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='zk_appendPrecomposedUTF8String:'>
-<arg name='value' index='0' type='@' declared_type='NSString*'/>
+<arg name='value' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method class_method='true' selector='zk_dataWithLittleInt16:'>
-<arg name='value' index='0' type='S' declared_type='UInt16'/>
+<method selector='zk_dataWithLittleInt16:' class_method='true'>
+<arg name='value' type='S' index='0' declared_type='UInt16'/>
 <retval type='@' declared_type='NSMutableData*'/>
 </method>
-<method class_method='true' selector='zk_dataWithLittleInt32:'>
-<arg name='value' index='0' type='L' declared_type='UInt32'/>
+<method selector='zk_dataWithLittleInt32:' class_method='true'>
+<arg name='value' type='L' index='0' declared_type='UInt32'/>
 <retval type='@' declared_type='NSMutableData*'/>
 </method>
-<method class_method='true' selector='zk_dataWithLittleInt64:'>
-<arg name='value' index='0' type='Q' declared_type='UInt64'/>
+<method selector='zk_dataWithLittleInt64:' class_method='true'>
+<arg name='value' type='Q' index='0' declared_type='UInt64'/>
 <retval type='@' declared_type='NSMutableData*'/>
 </method>
 </class>
 <class name='NSObject'>
 <method selector='gridView:adjustCellFrame:withinGridCellFrame:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='cellFrame' index='1' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
-<arg name='gridCellFrame' index='2' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='cellFrame' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='1' declared_type='CGRect'/>
+<arg name='gridCellFrame' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='2' declared_type='CGRect'/>
 <retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
 </method>
 <method selector='gridView:cellForItemAtIndex:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='AQGridViewCell*'/>
 </method>
 <method selector='gridView:commitEditingStyle:forRowAtIndex:'>
-<arg name='aGridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='editingStyle' index='1' type='i' declared_type='UITableViewCellEditingStyle'/>
-<arg name='index' index='2' type='I' declared_type='NSUInteger'/>
+<arg name='aGridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='editingStyle' type='i' index='1' declared_type='UITableViewCellEditingStyle'/>
+<arg name='index' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='gridView:didDeselectItemAtIndex:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='gridView:didSelectItemAtIndex:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='gridView:didSelectItemAtIndex:numFingersTouch:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='numFingers' index='2' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='numFingers' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='gridView:gestureRecognizer:activatedForItemAtIndex:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='recognizer' index='1' type='@' declared_type='UIGestureRecognizer*'/>
-<arg name='index' index='2' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='recognizer' type='@' index='1' declared_type='UIGestureRecognizer*'/>
+<arg name='index' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='gridView:willDeselectItemAtIndex:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='gridView:willDisplayCell:forItemAtIndex:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='cell' index='1' type='@' declared_type='AQGridViewCell*'/>
-<arg name='index' index='2' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='cell' type='@' index='1' declared_type='AQGridViewCell*'/>
+<arg name='index' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='gridView:willSelectItemAtIndex:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='gridView:willSelectItemAtIndex:numFingersTouch:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='numFingers' index='2' type='I' declared_type='NSUInteger'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='numFingers' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='gridViewDidEndUpdateAnimation:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='v' declared_type='void'/>
 </method>
+<method selector='initNanoObjectFromDictionaryRepresentation:forKey:store:'>
+<arg name='theDictionary' type='@' index='0' declared_type='NSDictionary*'/>
+<arg name='aKey' type='@' index='1' declared_type='NSString*'/>
+<arg name='theStore' type='@' index='2' declared_type='NSFNanoStore*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='nanoObjectDictionaryRepresentation'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='nanoObjectKey'>
+<retval type='@' declared_type='NSString*'/>
+</method>
 <method selector='numberOfItemsInGridView:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='portraitGridCellSizeForGridView:'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='{CGSize=ff}' declared_type='CGSize'/>
+</method>
+<method selector='rootObject'>
+<retval type='@' declared_type='id'/>
 </method>
 </class>
 <class name='NSString'>
@@ -957,7 +2171,7 @@
 </method>
 </class>
 <class name='UIColor'>
-<method class_method='true' selector='AQDefaultGridCellSeparatorColor'>
+<method selector='AQDefaultGridCellSeparatorColor' class_method='true'>
 <retval type='@' declared_type='UIColor*'/>
 </method>
 </class>
@@ -966,7 +2180,7 @@
 <retval type='@' declared_type='NSString*'/>
 </method>
 <method selector='calculateSizeAndItemCount:'>
-<arg name='userInfo' index='0' type='@' declared_type='NSDictionary*'/>
+<arg name='userInfo' type='@' index='0' declared_type='NSDictionary*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='cdTrailer'>
@@ -976,7 +2190,7 @@
 <retval type='@' declared_type='NSMutableArray*'/>
 </method>
 <method selector='cleanUpExpansionDirectory:'>
-<arg name='expansionDirectory' index='0' type='@' declared_type='NSString*'/>
+<arg name='expansionDirectory' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='comment'>
@@ -1007,15 +2221,15 @@
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='didUpdateBytesWritten:'>
-<arg name='byteCount' index='0' type='@' declared_type='NSNumber*'/>
+<arg name='byteCount' type='@' index='0' declared_type='NSNumber*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='didUpdateTotalCount:'>
-<arg name='count' index='0' type='@' declared_type='NSNumber*'/>
+<arg name='count' type='@' index='0' declared_type='NSNumber*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='didUpdateTotalSize:'>
-<arg name='size' index='0' type='@' declared_type='NSNumber*'/>
+<arg name='size' type='@' index='0' declared_type='NSNumber*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='fileManager'>
@@ -1025,58 +2239,58 @@
 <retval type='@' declared_type='id __attribute__((objc_gc(weak)))'/>
 </method>
 <method selector='setArchivePath:'>
-<arg name='archivePath' index='0' type='@' declared_type='NSString*'/>
+<arg name='archivePath' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCdTrailer:'>
-<arg name='cdTrailer' index='0' type='@' declared_type='ZKCDTrailer*'/>
+<arg name='cdTrailer' type='@' index='0' declared_type='ZKCDTrailer*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCentralDirectory:'>
-<arg name='centralDirectory' index='0' type='@' declared_type='NSMutableArray*'/>
+<arg name='centralDirectory' type='@' index='0' declared_type='NSMutableArray*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setComment:'>
-<arg name='comment' index='0' type='@' declared_type='NSString*'/>
+<arg name='comment' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setDelegate:'>
-<arg name='delegate' index='0' type='@' declared_type='id __attribute__((objc_gc(weak)))'/>
+<arg name='delegate' type='@' index='0' declared_type='id __attribute__((objc_gc(weak)))'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setFileManager:'>
-<arg name='fileManager' index='0' type='@' declared_type='NSFileManager*'/>
+<arg name='fileManager' type='@' index='0' declared_type='NSFileManager*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setInvoker:'>
-<arg name='invoker' index='0' type='@' declared_type='id __attribute__((objc_gc(weak)))'/>
+<arg name='invoker' type='@' index='0' declared_type='id __attribute__((objc_gc(weak)))'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setThrottleThreadSleepTime:'>
-<arg name='throttleThreadSleepTime' index='0' type='d' declared_type='NSTimeInterval'/>
+<arg name='throttleThreadSleepTime' type='d' index='0' declared_type='NSTimeInterval'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='throttleThreadSleepTime'>
 <retval type='d' declared_type='NSTimeInterval'/>
 </method>
 <method selector='uniqueExpansionDirectoryIn:'>
-<arg name='enclosingFolder' index='0' type='@' declared_type='NSString*'/>
+<arg name='enclosingFolder' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='NSString*'/>
 </method>
-<method class_method='true' selector='uniquify:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<method selector='uniquify:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='NSString*'/>
 </method>
-<method class_method='true' selector='validArchiveAtPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<method selector='validArchiveAtPath:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='B' declared_type='BOOL'/>
 </method>
 <method selector='willUnzipPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='willZipPath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
@@ -1153,94 +2367,94 @@
 <method selector='posixPermissions'>
 <retval type='@' declared_type='NSNumber*'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:atOffset:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='offset' index='1' type='Q' declared_type='unsigned long long'/>
+<method selector='recordWithArchivePath:atOffset:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='offset' type='Q' index='1' declared_type='unsigned long long'/>
 <retval type='@' declared_type='ZKCDHeader*'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg name='data' index='0' type='@' declared_type='NSData*'/>
-<arg name='offset' index='1' type='I' declared_type='NSUInteger'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg name='data' type='@' index='0' declared_type='NSData*'/>
+<arg name='offset' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='ZKCDHeader*'/>
 </method>
 <method selector='setCachedData:'>
-<arg name='cachedData' index='0' type='@' declared_type='NSMutableData*'/>
+<arg name='cachedData' type='@' index='0' declared_type='NSMutableData*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setComment:'>
-<arg name='comment' index='0' type='@' declared_type='NSString*'/>
+<arg name='comment' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCommentLength:'>
-<arg name='commentLength' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='commentLength' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCompressedSize:'>
-<arg name='compressedSize' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='compressedSize' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCompressionMethod:'>
-<arg name='compressionMethod' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='compressionMethod' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCrc:'>
-<arg name='crc' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='crc' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setDiskNumberStart:'>
-<arg name='diskNumberStart' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='diskNumberStart' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setExternalFileAttributes:'>
-<arg name='externalFileAttributes' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='externalFileAttributes' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setExtraField:'>
-<arg name='extraField' index='0' type='@' declared_type='NSData*'/>
+<arg name='extraField' type='@' index='0' declared_type='NSData*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setExtraFieldLength:'>
-<arg name='extraFieldLength' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='extraFieldLength' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setFilename:'>
-<arg name='filename' index='0' type='@' declared_type='NSString*'/>
+<arg name='filename' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setFilenameLength:'>
-<arg name='filenameLength' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='filenameLength' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setGeneralPurposeBitFlag:'>
-<arg name='generalPurposeBitFlag' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='generalPurposeBitFlag' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setInternalFileAttributes:'>
-<arg name='internalFileAttributes' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='internalFileAttributes' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLastModDate:'>
-<arg name='lastModDate' index='0' type='@' declared_type='NSDate*'/>
+<arg name='lastModDate' type='@' index='0' declared_type='NSDate*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLocalHeaderOffset:'>
-<arg name='localHeaderOffset' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='localHeaderOffset' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg name='magicNumber' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='magicNumber' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setUncompressedSize:'>
-<arg name='uncompressedSize' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='uncompressedSize' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setVersionMadeBy:'>
-<arg name='versionMadeBy' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='versionMadeBy' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setVersionNeededToExtract:'>
-<arg name='versionNeededToExtract' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='versionNeededToExtract' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='uncompressedSize'>
@@ -1284,53 +2498,53 @@
 <method selector='offsetOfStartOfCentralDirectory'>
 <retval type='Q' declared_type='unsigned long long'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<method selector='recordWithArchivePath:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='ZKCDTrailer*'/>
 </method>
-<method class_method='true' selector='recordWithData:'>
-<arg name='data' index='0' type='@' declared_type='NSData*'/>
+<method selector='recordWithData:' class_method='true'>
+<arg name='data' type='@' index='0' declared_type='NSData*'/>
 <retval type='@' declared_type='ZKCDTrailer*'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg name='data' index='0' type='@' declared_type='NSData*'/>
-<arg name='offset' index='1' type='I' declared_type='NSUInteger'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg name='data' type='@' index='0' declared_type='NSData*'/>
+<arg name='offset' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='ZKCDTrailer*'/>
 </method>
 <method selector='setComment:'>
-<arg name='comment' index='0' type='@' declared_type='NSString*'/>
+<arg name='comment' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCommentLength:'>
-<arg name='commentLength' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='commentLength' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setDiskNumberWithStartOfCentralDirectory:'>
-<arg name='diskNumberWithStartOfCentralDirectory' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='diskNumberWithStartOfCentralDirectory' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg name='magicNumber' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='magicNumber' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setNumberOfCentralDirectoryEntriesOnThisDisk:'>
-<arg name='numberOfCentralDirectoryEntriesOnThisDisk' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='numberOfCentralDirectoryEntriesOnThisDisk' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setOffsetOfStartOfCentralDirectory:'>
-<arg name='offsetOfStartOfCentralDirectory' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='offsetOfStartOfCentralDirectory' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSizeOfCentralDirectory:'>
-<arg name='sizeOfCentralDirectory' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='sizeOfCentralDirectory' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setThisDiskNumber:'>
-<arg name='thisDiskNumber' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='thisDiskNumber' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setTotalNumberOfCentralDirectoryEntries:'>
-<arg name='totalNumberOfCentralDirectoryEntries' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='totalNumberOfCentralDirectoryEntries' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='sizeOfCentralDirectory'>
@@ -1365,54 +2579,54 @@
 <method selector='offsetOfStartOfCentralDirectory'>
 <retval type='Q' declared_type='unsigned long long'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:atOffset:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='offset' index='1' type='Q' declared_type='unsigned long long'/>
+<method selector='recordWithArchivePath:atOffset:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='offset' type='Q' index='1' declared_type='unsigned long long'/>
 <retval type='@' declared_type='ZKCDTrailer64*'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg name='data' index='0' type='@' declared_type='NSData*'/>
-<arg name='offset' index='1' type='I' declared_type='NSUInteger'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg name='data' type='@' index='0' declared_type='NSData*'/>
+<arg name='offset' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='ZKCDTrailer64*'/>
 </method>
 <method selector='setDiskNumberWithStartOfCentralDirectory:'>
-<arg name='diskNumberWithStartOfCentralDirectory' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='diskNumberWithStartOfCentralDirectory' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg name='magicNumber' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='magicNumber' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setNumberOfCentralDirectoryEntriesOnThisDisk:'>
-<arg name='numberOfCentralDirectoryEntriesOnThisDisk' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='numberOfCentralDirectoryEntriesOnThisDisk' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setOffsetOfStartOfCentralDirectory:'>
-<arg name='offsetOfStartOfCentralDirectory' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='offsetOfStartOfCentralDirectory' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSizeOfCentralDirectory:'>
-<arg name='sizeOfCentralDirectory' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='sizeOfCentralDirectory' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setSizeOfTrailer:'>
-<arg name='sizeOfTrailer' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='sizeOfTrailer' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setThisDiskNumber:'>
-<arg name='thisDiskNumber' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='thisDiskNumber' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setTotalNumberOfCentralDirectoryEntries:'>
-<arg name='totalNumberOfCentralDirectoryEntries' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='totalNumberOfCentralDirectoryEntries' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setVersionMadeBy:'>
-<arg name='versionMadeBy' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='versionMadeBy' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setVersionNeededToExtract:'>
-<arg name='versionNeededToExtract' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='versionNeededToExtract' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='sizeOfCentralDirectory'>
@@ -1453,141 +2667,141 @@
 <method selector='offsetOfStartOfCentralDirectoryTrailer64'>
 <retval type='Q' declared_type='unsigned long long'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:andCDTrailerLength:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='cdTrailerLength' index='1' type='I' declared_type='NSUInteger'/>
+<method selector='recordWithArchivePath:andCDTrailerLength:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='cdTrailerLength' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='ZKCDTrailer64Locator*'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg name='data' index='0' type='@' declared_type='NSData*'/>
-<arg name='offset' index='1' type='I' declared_type='NSUInteger'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg name='data' type='@' index='0' declared_type='NSData*'/>
+<arg name='offset' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='ZKCDTrailer64Locator*'/>
 </method>
 <method selector='setDiskNumberWithStartOfCentralDirectory:'>
-<arg name='diskNumberWithStartOfCentralDirectory' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='diskNumberWithStartOfCentralDirectory' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg name='magicNumber' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='magicNumber' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setNumberOfDisks:'>
-<arg name='numberOfDisks' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='numberOfDisks' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setOffsetOfStartOfCentralDirectoryTrailer64:'>
-<arg name='offsetOfStartOfCentralDirectoryTrailer64' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='offsetOfStartOfCentralDirectoryTrailer64' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='ZKDataArchive'>
-<method class_method='true' selector='archiveWithArchiveData:'>
-<arg name='archiveData' index='0' type='@' declared_type='NSMutableData*'/>
+<method selector='archiveWithArchiveData:' class_method='true'>
+<arg name='archiveData' type='@' index='0' declared_type='NSMutableData*'/>
 <retval type='@' declared_type='ZKDataArchive*'/>
 </method>
-<method class_method='true' selector='archiveWithArchivePath:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
+<method selector='archiveWithArchivePath:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='ZKDataArchive*'/>
 </method>
 <method selector='data'>
 <retval type='@' declared_type='NSMutableData*'/>
 </method>
 <method selector='deflateData:withFilename:andAttributes:'>
-<arg name='data' index='0' type='@' declared_type='NSData*'/>
-<arg name='filename' index='1' type='@' declared_type='NSString*'/>
-<arg name='fileAttributes' index='2' type='@' declared_type='NSDictionary*'/>
+<arg name='data' type='@' index='0' declared_type='NSData*'/>
+<arg name='filename' type='@' index='1' declared_type='NSString*'/>
+<arg name='fileAttributes' type='@' index='2' declared_type='NSDictionary*'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='deflateDirectory:relativeToPath:usingResourceFork:'>
-<arg name='dirPath' index='0' type='@' declared_type='NSString*'/>
-<arg name='basePath' index='1' type='@' declared_type='NSString*'/>
-<arg name='flag' index='2' type='B' declared_type='BOOL'/>
+<arg name='dirPath' type='@' index='0' declared_type='NSString*'/>
+<arg name='basePath' type='@' index='1' declared_type='NSString*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='deflateFile:relativeToPath:usingResourceFork:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='basePath' index='1' type='@' declared_type='NSString*'/>
-<arg name='rfFlag' index='2' type='B' declared_type='BOOL'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='basePath' type='@' index='1' declared_type='NSString*'/>
+<arg name='rfFlag' type='B' index='2' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='deflateFiles:relativeToPath:usingResourceFork:'>
-<arg name='paths' index='0' type='@' declared_type='NSArray*'/>
-<arg name='basePath' index='1' type='@' declared_type='NSString*'/>
-<arg name='flag' index='2' type='B' declared_type='BOOL'/>
+<arg name='paths' type='@' index='0' declared_type='NSArray*'/>
+<arg name='basePath' type='@' index='1' declared_type='NSString*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='inflateAll'>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='inflateFile:attributes:'>
-<arg name='cdHeader' index='0' type='@' declared_type='ZKCDHeader*'/>
-<arg name='fileAttributes' index='1' type='^@' declared_type='NSDictionary**'/>
+<arg name='cdHeader' type='@' index='0' declared_type='ZKCDHeader*'/>
+<arg name='fileAttributes' type='^@' index='1' declared_type='NSDictionary**'/>
 <retval type='@' declared_type='NSData*'/>
 </method>
 <method selector='inflateInFolder:withFolderName:usingResourceFork:'>
-<arg name='enclosingFolder' index='0' type='@' declared_type='NSString*'/>
-<arg name='folderName' index='1' type='@' declared_type='NSString*'/>
-<arg name='rfFlag' index='2' type='B' declared_type='BOOL'/>
+<arg name='enclosingFolder' type='@' index='0' declared_type='NSString*'/>
+<arg name='folderName' type='@' index='1' declared_type='NSString*'/>
+<arg name='rfFlag' type='B' index='2' declared_type='BOOL'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
 <method selector='inflatedFiles'>
 <retval type='@' declared_type='NSMutableArray*'/>
 </method>
 <method selector='setData:'>
-<arg name='data' index='0' type='@' declared_type='NSMutableData*'/>
+<arg name='data' type='@' index='0' declared_type='NSMutableData*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setInflatedFiles:'>
-<arg name='inflatedFiles' index='0' type='@' declared_type='NSMutableArray*'/>
+<arg name='inflatedFiles' type='@' index='0' declared_type='NSMutableArray*'/>
 <retval type='v' declared_type='void'/>
 </method>
 </class>
 <class name='ZKFileArchive'>
-<method class_method='true' selector='archiveWithArchivePath:'>
-<arg name='archivePath' index='0' type='@' declared_type='NSString*'/>
+<method selector='archiveWithArchivePath:' class_method='true'>
+<arg name='archivePath' type='@' index='0' declared_type='NSString*'/>
 <retval type='@' declared_type='ZKFileArchive*'/>
 </method>
 <method selector='deflateDirectory:relativeToPath:usingResourceFork:'>
-<arg name='dirPath' index='0' type='@' declared_type='NSString*'/>
-<arg name='basePath' index='1' type='@' declared_type='NSString*'/>
-<arg name='flag' index='2' type='B' declared_type='BOOL'/>
+<arg name='dirPath' type='@' index='0' declared_type='NSString*'/>
+<arg name='basePath' type='@' index='1' declared_type='NSString*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='deflateFile:relativeToPath:usingResourceFork:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='basePath' index='1' type='@' declared_type='NSString*'/>
-<arg name='flag' index='2' type='B' declared_type='BOOL'/>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='basePath' type='@' index='1' declared_type='NSString*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='deflateFiles:relativeToPath:usingResourceFork:'>
-<arg name='paths' index='0' type='@' declared_type='NSArray*'/>
-<arg name='basePath' index='1' type='@' declared_type='NSString*'/>
-<arg name='flag' index='2' type='B' declared_type='BOOL'/>
+<arg name='paths' type='@' index='0' declared_type='NSArray*'/>
+<arg name='basePath' type='@' index='1' declared_type='NSString*'/>
+<arg name='flag' type='B' index='2' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='inflateFile:toDirectory:'>
-<arg name='cdHeader' index='0' type='@' declared_type='ZKCDHeader*'/>
-<arg name='expansionDirectory' index='1' type='@' declared_type='NSString*'/>
+<arg name='cdHeader' type='@' index='0' declared_type='ZKCDHeader*'/>
+<arg name='expansionDirectory' type='@' index='1' declared_type='NSString*'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='inflateToDirectory:usingResourceFork:'>
-<arg name='expansionDirectory' index='0' type='@' declared_type='NSString*'/>
-<arg name='rfFlag' index='1' type='B' declared_type='BOOL'/>
+<arg name='expansionDirectory' type='@' index='0' declared_type='NSString*'/>
+<arg name='rfFlag' type='B' index='1' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
 <method selector='inflateToDiskUsingResourceFork:'>
-<arg name='flag' index='0' type='B' declared_type='BOOL'/>
+<arg name='flag' type='B' index='0' declared_type='BOOL'/>
 <retval type='i' declared_type='NSInteger'/>
 </method>
-<method class_method='true' selector='process:usingResourceFork:withInvoker:andDelegate:'>
-<arg name='item' index='0' type='@' declared_type='id'/>
-<arg name='flag' index='1' type='B' declared_type='BOOL'/>
-<arg name='invoker' index='2' type='@' declared_type='id'/>
-<arg name='delegate' index='3' type='@' declared_type='id'/>
+<method selector='process:usingResourceFork:withInvoker:andDelegate:' class_method='true'>
+<arg name='item' type='@' index='0' declared_type='id'/>
+<arg name='flag' type='B' index='1' declared_type='BOOL'/>
+<arg name='invoker' type='@' index='2' declared_type='id'/>
+<arg name='delegate' type='@' index='3' declared_type='id'/>
 <retval type='@' declared_type='ZKFileArchive*'/>
 </method>
 <method selector='setUseZip64Extensions:'>
-<arg name='useZip64Extensions' index='0' type='B' declared_type='BOOL'/>
+<arg name='useZip64Extensions' type='B' index='0' declared_type='BOOL'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='useZip64Extensions'>
@@ -1637,62 +2851,62 @@
 <method selector='parseZip64ExtraField'>
 <retval type='v' declared_type='void'/>
 </method>
-<method class_method='true' selector='recordWithArchivePath:atOffset:'>
-<arg name='path' index='0' type='@' declared_type='NSString*'/>
-<arg name='offset' index='1' type='Q' declared_type='unsigned long long'/>
+<method selector='recordWithArchivePath:atOffset:' class_method='true'>
+<arg name='path' type='@' index='0' declared_type='NSString*'/>
+<arg name='offset' type='Q' index='1' declared_type='unsigned long long'/>
 <retval type='@' declared_type='ZKLFHeader*'/>
 </method>
-<method class_method='true' selector='recordWithData:atOffset:'>
-<arg name='data' index='0' type='@' declared_type='NSData*'/>
-<arg name='offset' index='1' type='I' declared_type='NSUInteger'/>
+<method selector='recordWithData:atOffset:' class_method='true'>
+<arg name='data' type='@' index='0' declared_type='NSData*'/>
+<arg name='offset' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='ZKLFHeader*'/>
 </method>
 <method selector='setCompressedSize:'>
-<arg name='compressedSize' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='compressedSize' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCompressionMethod:'>
-<arg name='compressionMethod' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='compressionMethod' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setCrc:'>
-<arg name='crc' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='crc' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setExtraField:'>
-<arg name='extraField' index='0' type='@' declared_type='NSData*'/>
+<arg name='extraField' type='@' index='0' declared_type='NSData*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setExtraFieldLength:'>
-<arg name='extraFieldLength' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='extraFieldLength' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setFilename:'>
-<arg name='filename' index='0' type='@' declared_type='NSString*'/>
+<arg name='filename' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setFilenameLength:'>
-<arg name='filenameLength' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='filenameLength' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setGeneralPurposeBitFlag:'>
-<arg name='generalPurposeBitFlag' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='generalPurposeBitFlag' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLastModDate:'>
-<arg name='lastModDate' index='0' type='@' declared_type='NSDate*'/>
+<arg name='lastModDate' type='@' index='0' declared_type='NSDate*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setMagicNumber:'>
-<arg name='magicNumber' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='magicNumber' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setUncompressedSize:'>
-<arg name='uncompressedSize' index='0' type='Q' declared_type='unsigned long long'/>
+<arg name='uncompressedSize' type='Q' index='0' declared_type='unsigned long long'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setVersionNeededToExtract:'>
-<arg name='versionNeededToExtract' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='versionNeededToExtract' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='uncompressedSize'>
@@ -1713,14 +2927,14 @@
 <retval type='@' declared_type='NSDateFormatter*'/>
 </method>
 <method selector='levelToLabel:'>
-<arg name='level' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='level' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='@' declared_type='NSString*'/>
 </method>
 <method variadic='true' selector='logFile:lineNumber:level:format:'>
-<arg name='sourceFile' index='0' type='*' declared_type='char*'/>
-<arg name='lineNumber' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='level' index='2' type='I' declared_type='NSUInteger'/>
-<arg name='format' index='3' type='@' declared_type='NSString*'/>
+<arg name='sourceFile' type='*' index='0' declared_type='char*'/>
+<arg name='lineNumber' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='level' type='I' index='2' declared_type='NSUInteger'/>
+<arg name='format' type='@' index='3' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='logFilePath'>
@@ -1736,104 +2950,121 @@
 <retval type='i' declared_type='int'/>
 </method>
 <method selector='setDateFormatter:'>
-<arg name='dateFormatter' index='0' type='@' declared_type='NSDateFormatter*'/>
+<arg name='dateFormatter' type='@' index='0' declared_type='NSDateFormatter*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLogFilePath:'>
-<arg name='logFilePath' index='0' type='@' declared_type='NSString*'/>
+<arg name='logFilePath' type='@' index='0' declared_type='NSString*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setLogFilePointer:'>
-<arg name='logFilePointer' index='0' type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}' declared_type='FILE*'/>
+<arg name='logFilePointer' type='^{__sFILE=*iiss{__sbuf=*i}i^v^?^?^?^?{__sbuf=*i}^{__sFILEX}i[3C][1C]{__sbuf=*i}iq}' index='0' declared_type='FILE*'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setMinimumLevel:'>
-<arg name='minimumLevel' index='0' type='I' declared_type='NSUInteger'/>
+<arg name='minimumLevel' type='I' index='0' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
 <method selector='setPid:'>
-<arg name='pid' index='0' type='i' declared_type='int'/>
+<arg name='pid' type='i' index='0' declared_type='int'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method class_method='true' selector='sharedInstance'>
+<method selector='sharedInstance' class_method='true'>
 <retval type='@' declared_type='ZKLog*'/>
 </method>
 </class>
 <informal_protocol name='AQGridViewDataSource'>
-<method selector='gridView:cellForItemAtIndex:' type='@16@0:4@8I12'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<method type='@16@0:4@8I12' selector='gridView:cellForItemAtIndex:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='@' declared_type='AQGridViewCell*'/>
 </method>
-<method selector='numberOfItemsInGridView:' type='I12@0:4@8'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<method type='I12@0:4@8' selector='numberOfItemsInGridView:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
-<method selector='portraitGridCellSizeForGridView:' type='{CGSize=ff}12@0:4@8'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<method type='{CGSize=ff}12@0:4@8' selector='portraitGridCellSizeForGridView:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='{CGSize=ff}' declared_type='CGSize'/>
 </method>
 </informal_protocol>
 <informal_protocol name='AQGridViewDelegate'>
-<method selector='gridView:adjustCellFrame:withinGridCellFrame:' type='{CGRect={CGPoint=ff}{CGSize=ff}}44@0:4@8{CGRect={CGPoint=ff}{CGSize=ff}}12{CGRect={CGPoint=ff}{CGSize=ff}}28'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='cellFrame' index='1' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
-<arg name='gridCellFrame' index='2' type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
+<method type='{CGRect={CGPoint=ff}{CGSize=ff}}44@0:4@8{CGRect={CGPoint=ff}{CGSize=ff}}12{CGRect={CGPoint=ff}{CGSize=ff}}28' selector='gridView:adjustCellFrame:withinGridCellFrame:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='cellFrame' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='1' declared_type='CGRect'/>
+<arg name='gridCellFrame' type='{CGRect={CGPoint=ff}{CGSize=ff}}' index='2' declared_type='CGRect'/>
 <retval type='{CGRect={CGPoint=ff}{CGSize=ff}}' declared_type='CGRect'/>
 </method>
-<method selector='gridView:commitEditingStyle:forRowAtIndex:' type='v20@0:4@8i12I16'>
-<arg name='aGridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='editingStyle' index='1' type='i' declared_type='UITableViewCellEditingStyle'/>
-<arg name='index' index='2' type='I' declared_type='NSUInteger'/>
+<method type='v20@0:4@8i12I16' selector='gridView:commitEditingStyle:forRowAtIndex:'>
+<arg name='aGridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='editingStyle' type='i' index='1' declared_type='UITableViewCellEditingStyle'/>
+<arg name='index' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method selector='gridView:didDeselectItemAtIndex:' type='v16@0:4@8I12'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<method type='v16@0:4@8I12' selector='gridView:didDeselectItemAtIndex:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method selector='gridView:didSelectItemAtIndex:' type='v16@0:4@8I12'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<method type='v16@0:4@8I12' selector='gridView:didSelectItemAtIndex:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method selector='gridView:didSelectItemAtIndex:numFingersTouch:' type='v20@0:4@8I12I16'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='numFingers' index='2' type='I' declared_type='NSUInteger'/>
+<method type='v20@0:4@8I12I16' selector='gridView:didSelectItemAtIndex:numFingersTouch:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='numFingers' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method selector='gridView:gestureRecognizer:activatedForItemAtIndex:' type='v20@0:4@8@12I16'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='recognizer' index='1' type='@' declared_type='UIGestureRecognizer*'/>
-<arg name='index' index='2' type='I' declared_type='NSUInteger'/>
+<method type='v20@0:4@8@12I16' selector='gridView:gestureRecognizer:activatedForItemAtIndex:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='recognizer' type='@' index='1' declared_type='UIGestureRecognizer*'/>
+<arg name='index' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method selector='gridView:willDeselectItemAtIndex:' type='I16@0:4@8I12'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<method type='I16@0:4@8I12' selector='gridView:willDeselectItemAtIndex:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
-<method selector='gridView:willDisplayCell:forItemAtIndex:' type='v20@0:4@8@12I16'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='cell' index='1' type='@' declared_type='AQGridViewCell*'/>
-<arg name='index' index='2' type='I' declared_type='NSUInteger'/>
+<method type='v20@0:4@8@12I16' selector='gridView:willDisplayCell:forItemAtIndex:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='cell' type='@' index='1' declared_type='AQGridViewCell*'/>
+<arg name='index' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='v' declared_type='void'/>
 </method>
-<method selector='gridView:willSelectItemAtIndex:' type='I16@0:4@8I12'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
+<method type='I16@0:4@8I12' selector='gridView:willSelectItemAtIndex:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
-<method selector='gridView:willSelectItemAtIndex:numFingersTouch:' type='I20@0:4@8I12I16'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
-<arg name='index' index='1' type='I' declared_type='NSUInteger'/>
-<arg name='numFingers' index='2' type='I' declared_type='NSUInteger'/>
+<method type='I20@0:4@8I12I16' selector='gridView:willSelectItemAtIndex:numFingersTouch:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
+<arg name='index' type='I' index='1' declared_type='NSUInteger'/>
+<arg name='numFingers' type='I' index='2' declared_type='NSUInteger'/>
 <retval type='I' declared_type='NSUInteger'/>
 </method>
-<method selector='gridViewDidEndUpdateAnimation:' type='v12@0:4@8'>
-<arg name='gridView' index='0' type='@' declared_type='AQGridView*'/>
+<method type='v12@0:4@8' selector='gridViewDidEndUpdateAnimation:'>
+<arg name='gridView' type='@' index='0' declared_type='AQGridView*'/>
 <retval type='v' declared_type='void'/>
+</method>
+</informal_protocol>
+<informal_protocol name='NSFNanoObjectProtocol'>
+<method type='@20@0:4@8@12@16' selector='initNanoObjectFromDictionaryRepresentation:forKey:store:'>
+<arg name='theDictionary' type='@' index='0' declared_type='NSDictionary*'/>
+<arg name='aKey' type='@' index='1' declared_type='NSString*'/>
+<arg name='theStore' type='@' index='2' declared_type='NSFNanoStore*'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method type='@8@0:4' selector='nanoObjectDictionaryRepresentation'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method type='@8@0:4' selector='nanoObjectKey'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method type='@8@0:4' selector='rootObject'>
+<retval type='@' declared_type='id'/>
 </method>
 </informal_protocol>
 </signatures>

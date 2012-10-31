@@ -1,5 +1,5 @@
-class GridViewController < AQGridViewController
-
+class GridViewController < UIViewController 
 
   
+
 end
