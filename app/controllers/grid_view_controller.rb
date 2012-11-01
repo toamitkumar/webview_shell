@@ -2,12 +2,9 @@ class GridViewController < AQGridViewController
 
   attr_accessor :grid_view, :images
 
-  def init
+  def initWithNibName(nib_name, bundle:bundle)
     if(super)
       @images = []
-      Dir.glob("#{App.resources_path}/*.png").each do |f|
-        @images << File.basename(f) if File.file?(f)
-      end
 
       p @images
     end
@@ -17,21 +14,41 @@ class GridViewController < AQGridViewController
   def viewDidLoad
     super
 
-    @grid_view = AQGridView.alloc.init
+    # add_toolbar
+    # add_background_image
+
+    Dir.glob("#{App.resources_path}/*.png").each do |f|
+      @images << File.basename(f) if File.file?(f)
+    end
+
+    nibViews = NSBundle.mainBundle.loadNibNamed("GridViewController", owner:self, options:nil)
+    p nibViews.inspect
+    @grid_view = nibViews.objectAtIndex(0)
+    p @grid_view
+
+    # @grid_view = AQGridView.alloc.init#WithFrame(CGRectMake(0, 50, App.frame.size.height+20, App.frame.size.width))
     @grid_view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight
     @grid_view.autoresizesSubviews = true
     @grid_view.delegate = self
     @grid_view.dataSource = self
 
-    @web_frame = CGRectMake(0, 0, App.frame.size.height+20, App.frame.size.width)
+    self.view.addSubview(@grid_view)
+    @grid_view.reloadData
+  end
 
-    background_image = UIImageView.alloc.initWithFrame(@web_frame)
+  def add_background_image
+    window_frame = CGRectMake(0, 0, App.frame.size.height+20, App.frame.size.width)
+
+    background_image = UIImageView.alloc.initWithFrame(window_frame)
     image = UIImage.imageNamed("background.png")
     background_image.image = image
     self.view.addSubview(background_image)
+  end
 
-    self.view.addSubview(@grid_view)
-    @grid_view.reloadData
+  def add_toolbar
+    toolbar_frame = CGRectMake(0, 0, App.frame.size.height+20, 50)
+    toolbar = UIToolbar.alloc.initWithFrame(toolbar_frame)
+    self.view.addSubview(toolbar)
   end
 
   # def shouldAutorotateToInterfaceOrientation(interfaceOrientation)
@@ -52,21 +69,12 @@ class GridViewController < AQGridViewController
       cell = GridCell.alloc.initWithFrame(CGRectMake(0.0, 0.0, 200.0, 150.0), reuseIdentifier:"FilledCellIdentifier")
       cell.setSelectionStyle(AQGridViewCellSelectionStyleBlueGray)
     end
-
-p index
-p @images[index]
-p UIImage.imageNamed(@images[index])
-
-    cell.image = UIImage.imageNamed(@images[index])
-    cell.title = @images[index]
-
-p cell
+    cell.setImageAndTitle(UIImage.imageNamed(@images[index]), @images[index])
 
     cell
   end
 
   def gridView(aGridView, didSelectItemAtIndex:index)
-    p index
     @cell_popover_view = PopOverViewController.alloc.init
     @cell_popover_view.contentSizeForViewInPopover = CGSizeMake(@cell_popover_view.widthOfPopUp, @cell_popover_view.heightOfPopUp)
 

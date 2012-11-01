@@ -1,5 +1,7 @@
 class GridCell < AQGridViewCell
 
+  attr_accessor :title, :image_view
+
   def initWithFrame(frame, reuseIdentifier:aReuseIdentifier)
     if(super)
       @image_view = UIImageView.alloc.initWithFrame(CGRectZero)
@@ -15,33 +17,21 @@ class GridCell < AQGridViewCell
       @image_view.backgroundColor = self.backgroundColor
       @title.backgroundColor = self.backgroundColor
       
-      self.addSubview(@image_view)
-      self.addSubview(@title)
+      self.contentView.addSubview(@image_view)
+      self.contentView.addSubview(@title)
     end
     
     self
-  end 
-
-  def image
-    @image_view.image
   end
 
-  def setImage(anImage)
-    @image_view.image = anImage
-    self.setNeedsLayout
-  end
-
-  def title
-    @title.text
-  end
-
-  def setTitle(title)
-    @title.text = title
-    self.setNeedsLayout
+  def setImageAndTitle(image, text)
+    @image_view.image = image
+    @title.text = text
+    self.layoutSubViews
   end
 
   def layoutSubViews
-    super
+    # super
 
     p "called"
 
@@ -50,9 +40,9 @@ class GridCell < AQGridViewCell
     
     @title.sizeToFit
     frame = @title.frame
-    frame.size.width = MIN(frame.size.width, bounds.size.width)
+    frame.size.width = [frame.size.width, bounds.size.width].min
     frame.origin.y = CGRectGetMaxY(bounds) - frame.size.height
-    frame.origin.x = floorf((bounds.size.width - frame.size.width) * 0.5)
+    frame.origin.x = ((bounds.size.width - frame.size.width) * 0.5).floor
     @title.frame = frame
     
     # adjust the frame down for the image layout calculation
@@ -65,14 +55,14 @@ class GridCell < AQGridViewCell
     # scale it down to fit
     hRatio = bounds.size.width / imageSize.width
     vRatio = bounds.size.height / imageSize.height
-    ratio = MIN(hRatio, vRatio)
+    ratio = [hRatio, vRatio].min
     
     @image_view.sizeToFit
     frame = @image_view.frame
-    frame.size.width = floorf(imageSize.width * ratio)
-    frame.size.height = floorf(imageSize.height * ratio)
-    frame.origin.x = floorf((bounds.size.width - frame.size.width) * 0.5)
-    frame.origin.y = floorf((bounds.size.height - frame.size.height) * 05);
-    @image_view.frame = frame;
+    frame.size.width = (imageSize.width * ratio).floor
+    frame.size.height = (imageSize.height * ratio).floor
+    frame.origin.x = ((bounds.size.width - frame.size.width) * 0.5).floor
+    frame.origin.y = ((bounds.size.height - frame.size.height) * 05).floor
+    @image_view.frame = frame
   end
 end
