@@ -15,6 +15,7 @@ Motion::Project::App.setup do |app|
   app.files.unshift(Dir.glob("./lib/**/*.rb"))
 
   app.icons = ["webview_icon.jpeg"]
+  # app.info_plist['UIMainStoryboardFile'] = 'MainStoryboard'
 
   app.pods do
     pod "ZipKit"
