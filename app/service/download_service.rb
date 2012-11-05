@@ -1,9 +1,10 @@
 class DownloadService
   attr_accessor :delegate
 
-  def initialize(_url, _alert)
+  def initialize(_url, _file_path, _alert)
     @url = _url
     @progress_alert = _alert
+    @file_path = _file_path
 
     @response_data = NSMutableData.alloc.init
   end
@@ -29,8 +30,7 @@ class DownloadService
     current_length = NSNumber.numberWithLong(@response_data.length)
     progress = current_length.floatValue / @file_size
 
-    p @progress_alert.subviews
-    @progress_alert.subviews[0].progress = progress
+    @progress_alert.subviews[3].progress = progress
   end
 
   def connection(connection, didFailWithError:error)
@@ -41,15 +41,11 @@ class DownloadService
     p "Completed download"
     @progress_alert.dismissWithClickedButtonIndex(0, animated:true)
 
-    # file_manager = NSFileManager.defaultManager
-    # file_manager.createFileAtPath(zip_path, contents:@response_data, attributes:nil)
-    # load_web_view
+    file_manager = NSFileManager.defaultManager
+    file_manager.createFileAtPath(@file_path, contents:@response_data, attributes:nil)
+    p @file_path
+    self.delegate.unzip_and_load_web_view
   end
 
   # NSURLConnection Delegate END
-
-  private
-    def delete_at(path)
-      FileUtils.rm_rf(path)
-    end
 end

@@ -15,4 +15,9 @@ class AppDelegate
     
     true
   end
+
+  def app_web_view_controller
+    web_frame = CGRectMake(0, 0, App.frame.size.height+20, App.frame.size.width)
+    @app_web_view_controller ||= AppViewController.alloc.initWithFrame(web_frame)
+  end
 end

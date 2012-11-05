@@ -35,7 +35,6 @@ class PopOverViewController < UITableViewController
   end
 
   def tableView(tableView, didSelectRowAtIndexPath:index)
-    p @options[index.row] 
     self.delegate.cell_option_selected(@options[index.row] )
   end
 end
