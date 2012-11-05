@@ -17,6 +17,7 @@ class GridCell < AQGridViewCell
       @image_view.backgroundColor = self.backgroundColor
       @title.backgroundColor = self.backgroundColor
       
+      self.selectionStyle = AQGridViewCellSelectionStyleBlueGray
       self.contentView.addSubview(@image_view)
       self.contentView.addSubview(@title)
     end
@@ -36,7 +37,7 @@ class GridCell < AQGridViewCell
     p "called"
 
     imageSize = @image_view.image.size
-    bounds = CGRectInset(self.contentView.bounds, 10.0, 10.0 )
+    bounds = CGRectInset(self.contentView.bounds, 10.0, 10.0)
     
     @title.sizeToFit
     frame = @title.frame

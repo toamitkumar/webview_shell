@@ -1,39 +1,34 @@
-class GridViewController < UIViewController #AQGridViewController 
+class GridViewController < AQGridViewController 
 
-  attr_accessor :grid_view, :images
+  attr_accessor :grid_view, :images, :selected_cell_index
 
   def initWithNibName(nib_name, bundle:bundle)
     if(super)
       @images = []
-
-      p @images
+      navigationItem.title = "Applications"
+      navigationItem.rightBarButtonItem = UIBarButtonItem.alloc.initWithBarButtonSystemItem(UIBarButtonSystemItemAdd, target:self, action:"add_application:")
     end
     self
   end
 
   def viewDidLoad
-    super
 
-    # add_toolbar
     # add_background_image
+
+    @grid_view = self.view
+    # @grid_view.contentInset = UIEdgeInsetsMake(0.0, 0.0, 12.0, 0.0)
+    # @grid_view.rightContentInset = 12.0
+    # @grid_view.resizesCellWidthToFit = true
 
     Dir.glob("#{App.resources_path}/*.png").each do |f|
       @images << File.basename(f) if File.file?(f)
     end
 
-    p self.view.superview
+    p @images
 
-    @grid_view = self.view
-    p @grid_view
-
-    # @grid_view.setFrame(CGRectMake(50, 50, App.frame.size.height+20, App.frame.size.width))
-
-    # @grid_view = AQGridView.alloc.init#WithFrame(CGRectMake(0, 50, App.frame.size.height+20, App.frame.size.width))
-    @grid_view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight
-    @grid_view.autoresizesSubviews = true
-
-    # self.view.addSubview(@grid_view)
     @grid_view.reloadData
+
+    super
   end
 
   def add_background_image
@@ -43,12 +38,6 @@ class GridViewController < UIViewController #AQGridViewController
     image = UIImage.imageNamed("background.png")
     background_image.image = image
     self.view.addSubview(background_image)
-  end
-
-  def add_toolbar
-    toolbar_frame = CGRectMake(0, 0, App.frame.size.height+20, 40)
-    toolbar = UIToolbar.alloc.initWithFrame(toolbar_frame)
-    self.view.addSubview(toolbar)
   end
 
   def shouldAutorotateToInterfaceOrientation(interfaceOrientation)
@@ -67,8 +56,6 @@ class GridViewController < UIViewController #AQGridViewController
 
     unless(cell)
       cell = GridCell.alloc.initWithFrame(CGRectMake(0.0, 0.0, 200.0, 150.0), reuseIdentifier:"FilledCellIdentifier_#{index}")
-      cell.setSelectionStyle(AQGridViewCellSelectionStyleBlueGray)
-      p cell
     end
     cell.setImageAndTitle(UIImage.imageNamed(@images[index]), @images[index])
 
@@ -76,18 +63,42 @@ class GridViewController < UIViewController #AQGridViewController
   end
 
   def gridView(aGridView, didSelectItemAtIndex:index)
-    cell = aGridView.dequeueReusableCellWithIdentifier("FilledCellIdentifier_#{index}")
-    p cell
+    cell = aGridView.cellForItemAtIndex(index)
     @cell_popover_view = PopOverViewController.alloc.init
     @cell_popover_view.contentSizeForViewInPopover = CGSizeMake(@cell_popover_view.widthOfPopUp, @cell_popover_view.heightOfPopUp)
+    @cell_popover_view.delegate = self
+    @selected_cell_index = index
 
     @cell_popover = UIPopoverController.alloc.initWithContentViewController(@cell_popover_view)
     
-    @cell_popover.presentPopoverFromRect(cell.frame, inView:cell, permittedArrowDirections:UIPopoverArrowDirectionUp, animated:true)
+    @cell_popover.presentPopoverFromRect(cell.image_view.frame, inView:cell, permittedArrowDirections:UIPopoverArrowDirectionUp, animated:true)
   end
 
   def portraitGridCellSizeForGridView(aGridView)
-    CGSizeMake(224.0, 168.0)
+    CGSizeMake(253.0, 184.0)
+  end
+
+  def cell_option_selected(clicked_option)
+    p clicked_option
+    case clicked_option
+    when "Open"
+
+    when "Update"
+      @progress_alert = UIAlertView.alloc.initWithTitle("Preparing to Download", message:"Please wait...", delegate:self, cancelButtonTitle:nil, otherButtonTitles:nil)
+
+      @progress_view = UIProgressView.alloc.initWithFrame(CGRectMake(30.0, 80.0, 225.0, 90.0))
+      @progress_view.setProgressViewStyle(UIProgressViewStyleBar)
+      @progress_alert.addSubview(@progress_view)
+      @progress_alert.show
+
+      DownloadService.new("https://github.com/toamitkumar/webview_shell/blob/master/resources/hack2-hongkong.zip?raw=true", @progress_alert).fetch
+    when "Delete"
+
+    end
+  end
+
+  def add_application(sender)
+
   end
 
 end
