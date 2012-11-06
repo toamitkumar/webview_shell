@@ -24,8 +24,6 @@ class GridViewController < AQGridViewController
       @images << File.basename(f) if File.file?(f)
     end
 
-    p @images
-
     @grid_view.reloadData
 
     super
