@@ -129,8 +129,8 @@ class GridViewController < AQGridViewController
   end
 
   def create_new_application(name, url)
-    Apps.create_new(name, url)
     close_popover(@add_popover)
+    Apps.create_new(name, url)
   end
 
   def close_popover(popover)
