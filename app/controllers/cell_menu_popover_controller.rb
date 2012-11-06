@@ -1,4 +1,4 @@
-class PopOverViewController < UITableViewController
+class CellMenuPopoverController < UITableViewController
 
   attr_accessor :options, :delegate
 

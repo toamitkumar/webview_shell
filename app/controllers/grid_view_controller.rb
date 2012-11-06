@@ -6,7 +6,7 @@ class GridViewController < AQGridViewController
     if(super)
       @images = []
       navigationItem.title = "Applications"
-      navigationItem.rightBarButtonItem = UIBarButtonItem.alloc.initWithBarButtonSystemItem(UIBarButtonSystemItemAdd, target:self, action:"add_application:")
+      navigationItem.rightBarButtonItem = UIBarButtonItem.alloc.initWithBarButtonSystemItem(UIBarButtonSystemItemAdd, target:self, action:"show_application_popover:")
     end
     self
   end
@@ -64,7 +64,7 @@ class GridViewController < AQGridViewController
 
   def gridView(aGridView, didSelectItemAtIndex:index)
     cell = aGridView.cellForItemAtIndex(index)
-    @cell_popover_view = PopOverViewController.alloc.init
+    @cell_popover_view = CellMenuPopoverController.alloc.init
     @cell_popover_view.contentSizeForViewInPopover = CGSizeMake(@cell_popover_view.widthOfPopUp, @cell_popover_view.heightOfPopUp)
     @cell_popover_view.delegate = self
     @selected_cell_index = index
@@ -91,7 +91,7 @@ class GridViewController < AQGridViewController
   end
 
   def cell_option_selected(clicked_option)
-    @cell_popover.dismissPopoverAnimated(true)
+    close_popover(@cell_popover)
 
     case clicked_option
     when "Open"
@@ -114,59 +114,30 @@ class GridViewController < AQGridViewController
     end
   end
 
-  def add_application(sender)
-    @alert_view = UIAlertView.alloc.initWithTitle("Add a new Application", message:nil, delegate:self, cancelButtonTitle:"Cancel", otherButtonTitles:"Add", nil)
-    @alert_view.addTextFieldWithValue("", label:"Name of Application")
-    @alert_view.addTextFieldWithValue("", label:"URL to download")
-    @alert_view.setFrame(CGRectMake(12, 90, 260, 25))
+  def show_application_popover(sender)
+    if(@add_popover.nil? or not @add_popover.isPopoverVisible)
+      @add_popover_view = AddApplicationPopoverController.alloc.init
+      @add_popover_view.contentSizeForViewInPopover = CGSizeMake(@add_popover_view.widthOfPopUp, @add_popover_view.heightOfPopUp)
+      @add_popover_view.delegate = self
 
-    name = @alert_view.textFieldAtIndex(0)
-    name.clearButtonMode = UITextFieldViewModeWhileEditing
-    name.keyboardType = UIKeyboardTypeAlphabet
-    name.keyboardAppearance = UIKeyboardAppearanceAlert
-    name.autocapitalizationType = UITextAutocapitalizationTypeWords
-    name.autocorrectionType = UITextAutocorrectionTypeNo
-
-    url = @alert_view.textFieldAtIndex(1)
-    url.clearButtonMode = UITextFieldViewModeWhileEditing
-    url.keyboardType = UIKeyboardTypeURL
-    url.keyboardAppearance = UIKeyboardAppearanceAlert
-    url.autocapitalizationType = UITextAutocapitalizationTypeNone
-    url.autocorrectionType = UITextAutocorrectionTypeNo
-
-    @alert_view.show
-  end
-
-  def willPresentAlertView(alertView)
-    p alertView.frame
-    alertView.setFrame(CGRectMake(10, 100, 300, 320))
-  end
-
-  def alertViewShouldEnableFirstOtherButton(alertView)
-    name = alertView.textFieldAtIndex(0).text
-    url = alertView.textFieldAtIndex(1).text
-    if(name and url)
-      true
+      @add_popover = UIPopoverController.alloc.initWithContentViewController(@add_popover_view)
+      
+      @add_popover.presentPopoverFromBarButtonItem(sender, permittedArrowDirections:UIPopoverArrowDirectionUp, animated:true)
     else
-      false
+      close_popover(@add_popover) if(@add_popover)
     end
   end
 
-  def alertView(alertView, didDismissWithButtonIndex:buttonIndex)
-    if(buttonIndex == 1)
-      Apps.create_new(alertView.textFieldAtIndex(0).text, alertView.textFieldAtIndex(1).text)
-      # Scenario.create(alertView.textFieldAtIndex(0).text, UserInput.instance.json_as_string)
-    end
+  def create_new_application(name, url)
+    Apps.create_new(name, url)
+    close_popover(@add_popover)
   end
 
-  def textFieldShouldReturn(textField)
-    if(textField.text.length >= 2)
-      @alert_view.dismissWithClickedButtonIndex(1, animated:true)
-      return true
+  def close_popover(popover)
+    if(popover)
+      popover.dismissPopoverAnimated(true)
+      popover = nil
     end
-    return false
   end
-
-
 
 end

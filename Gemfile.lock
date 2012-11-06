@@ -22,6 +22,8 @@ GEM
       multipart-post (~> 1.1)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+    formotion (1.1.4)
+      bubble-wrap (>= 1.1.4)
     hashie (1.2.0)
     i18n (0.6.1)
     json (1.7.5)
@@ -49,5 +51,6 @@ PLATFORMS
 DEPENDENCIES
   bubble-wrap
   cocoapods (= 0.13.0)
+  formotion
   motion-cocoapods (~> 1.1.2)
   nano-store
