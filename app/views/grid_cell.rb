@@ -1,6 +1,6 @@
 class GridCell < AQGridViewCell
 
-  attr_accessor :title, :image_view
+  attr_accessor :title, :image_view, :app_uuid
 
   def initWithFrame(frame, reuseIdentifier:aReuseIdentifier)
     if(super)

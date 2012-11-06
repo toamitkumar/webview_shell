@@ -1,10 +1,10 @@
 class GridViewController < AQGridViewController 
 
-  attr_accessor :grid_view, :images, :selected_cell_index
+  attr_accessor :grid_view, :webview_apps, :selected_app_uuid
 
   def initWithNibName(nib_name, bundle:bundle)
     if(super)
-      @images = []
+      @webview_apps = []
       navigationItem.title = "Applications"
       navigationItem.rightBarButtonItem = UIBarButtonItem.alloc.initWithBarButtonSystemItem(UIBarButtonSystemItemAdd, target:self, action:"show_application_popover:")
     end
@@ -20,9 +20,11 @@ class GridViewController < AQGridViewController
     # @grid_view.rightContentInset = 12.0
     # @grid_view.resizesCellWidthToFit = true
 
-    Dir.glob("#{App.resources_path}/*.png").each do |f|
-      @images << File.basename(f) if File.file?(f)
-    end
+    # Dir.glob("#{App.resources_path}/*.png").each do |f|
+    #   @images << File.basename(f) if File.file?(f)
+    # end
+
+    @webview_apps = WebviewApp.all
 
     @grid_view.reloadData
 
@@ -46,7 +48,7 @@ class GridViewController < AQGridViewController
   end
 
   def numberOfItemsInGridView(aGridView)
-    @images.size
+    @webview_apps.size
   end
 
   def gridView(aGridView, cellForItemAtIndex:index)
@@ -55,7 +57,11 @@ class GridViewController < AQGridViewController
     unless(cell)
       cell = GridCell.alloc.initWithFrame(CGRectMake(0.0, 0.0, 200.0, 150.0), reuseIdentifier:"FilledCellIdentifier_#{index}")
     end
-    cell.setImageAndTitle(UIImage.imageNamed(@images[index]), @images[index])
+    image_data = NSData.alloc.initWithContentsOfFile(@webview_apps[index].icon_path)
+    image = UIImage.alloc.initWithData(image_data)
+
+    cell.app_uuid = @webview_apps[index].key
+    cell.setImageAndTitle(image, @webview_apps[index].name)
 
     cell
   end
@@ -65,7 +71,7 @@ class GridViewController < AQGridViewController
     @cell_popover_view = CellMenuPopoverController.alloc.init
     @cell_popover_view.contentSizeForViewInPopover = CGSizeMake(@cell_popover_view.widthOfPopUp, @cell_popover_view.heightOfPopUp)
     @cell_popover_view.delegate = self
-    @selected_cell_index = index
+    @selected_app_uuid = cell.app_uuid
 
     @cell_popover = UIPopoverController.alloc.initWithContentViewController(@cell_popover_view)
     
@@ -76,39 +82,54 @@ class GridViewController < AQGridViewController
     CGSizeMake(253.0, 184.0)
   end
 
-  def unzip_and_load_web_view
-    p "unzip"
-    @webview_app = WebviewApp.new("hack2-hongkong", "https://github.com/toamitkumar/webview_shell/blob/master/resources/hack2-hongkong.zip?raw=true")
-    @webview_app.unzip_and_update
+  def download_and_refresh(app)
+    download(app)
+    @download_observer = App.notification_center.observe "DownloadCompletedNotification" do |notification|
+      app.unzip_and_update
+      @webview_apps = WebviewApp.all
+
+      @grid_view.reloadData
+    end
   end
 
-  def load_web_view
+  def delete_and_refresh(app)
+    app.delete
+    @webview_apps = WebviewApp.all
+
+    @grid_view.reloadData
+  end
+
+  def download(app)
+    @progress_alert = UIAlertView.alloc.initWithTitle("Preparing to Download", message:"Please wait...", delegate:self, cancelButtonTitle:nil, otherButtonTitles:nil)
+
+    @progress_view = UIProgressView.alloc.initWithFrame(CGRectMake(30.0, 80.0, 225.0, 90.0))
+    @progress_view.setProgressViewStyle(UIProgressViewStyleBar)
+    @progress_alert.addSubview(@progress_view)
+    @progress_alert.show
+
+    download_service = DownloadService.new(app.zip_file_url, app.zip_path, @progress_alert)
+    download_service.delegate = self
+    download_service.fetch
+  end
+
+  def load_web_view(app)
     @web_view_controller = App.delegate.app_web_view_controller
     navigationController.pushViewController(@web_view_controller, animated:true)
-    @web_view_controller.load_web_view("hack2-hongkong", "#{App.documents_path}/hack2-hongkong/index.html")
+    @web_view_controller.load_web_view(app.name, app.html_path)
   end
 
   def cell_option_selected(clicked_option)
+    app = WebviewApp.find_by_key(@selected_app_uuid)
+
     close_popover(@cell_popover)
 
     case clicked_option
     when "Open"
-      load_web_view
+      load_web_view(app)
     when "Update"
-      @progress_alert = UIAlertView.alloc.initWithTitle("Preparing to Download", message:"Please wait...", delegate:self, cancelButtonTitle:nil, otherButtonTitles:nil)
-
-      @progress_view = UIProgressView.alloc.initWithFrame(CGRectMake(30.0, 80.0, 225.0, 90.0))
-      @progress_view.setProgressViewStyle(UIProgressViewStyleBar)
-      @progress_alert.addSubview(@progress_view)
-      @progress_alert.show
-
-      # TODO: fetch app details based on index and then download it
-
-      download_service = DownloadService.new("https://github.com/toamitkumar/webview_shell/blob/master/resources/hack2-hongkong.zip?raw=true", "#{App.documents_path}/hack2-hongkong-zipfile.zip", @progress_alert)
-      download_service.delegate = self
-      download_service.fetch
+      download_and_refresh(app)
     when "Delete"
-
+      delete_and_refresh(app)
     end
   end
 
@@ -128,7 +149,8 @@ class GridViewController < AQGridViewController
 
   def create_new_application(name, url)
     close_popover(@add_popover)
-    Apps.create_new(name, url)
+    app = WebviewApp.create_new(name, url)
+    download_and_refresh(app)
   end
 
   def close_popover(popover)

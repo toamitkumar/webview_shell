@@ -8,13 +8,9 @@ class AppViewController < UIViewController
     self
   end
 
-  def loadView
-    # self.view = RootWebView.alloc.initWithFrame(@web_frame)
-  end
-
   def load_web_view(name, html_path)
     navigationItem.title = name
-    self.view = RootWebView.alloc.initWithFrame(@web_frame)
+    self.view = RootWebView.load(@web_frame, html_path)
   end
 
 end

@@ -1,19 +1,27 @@
 class RootWebView < UIView
 
+  attr_accessor :html_path
+
+  def self.load(rect, html_path)
+    web_view = self.alloc.initWithFrame(rect)
+    web_view.html_path = html_path
+    web_view.loadHtml(html_path)
+
+    web_view    
+  end
+
   def initWithFrame(rect)
     if(super)
       @webFrame = rect
       createWebSubView
 
-      web_view_app = App.delegate.instance_variable_get(:@webview_app)
-
-      loadHtml(web_view_app.html_path)
       addActivityIndicator(rect)
     end
     self
   end
 
   def webViewDidStartLoad(webView)
+    p "webViewDidStartLoad"
     UIView.transitionWithView(
       self, 
       duration:0.5, 
@@ -38,6 +46,7 @@ class RootWebView < UIView
   end
 
   def loadHtml(html_path)
+    p "loadHtml"
     @webView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(html_path)))
   end
 
