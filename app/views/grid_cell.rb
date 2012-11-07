@@ -9,7 +9,8 @@ class GridCell < AQGridViewCell
 
       @title.highlightedTextColor = UIColor.whiteColor
       @title.font = UIFont.boldSystemFontOfSize(12.0)
-      @title.adjustsFontSizeToFitWidth = true
+      @title.adjustsFontSizeToFitWidth = false
+      @title.textAlignment = UITextAlignmentCenter
       @title.minimumFontSize = 10.0
 
       self.backgroundColor = UIColor.colorWithWhite(0.95, alpha: 1.0)
@@ -32,12 +33,8 @@ class GridCell < AQGridViewCell
   end
 
   def layoutSubViews
-    # super
-
-    p "called"
-
     imageSize = @image_view.image.size
-    bounds = CGRectInset(self.contentView.bounds, 10.0, 10.0)
+    bounds = CGRectInset(self.contentView.bounds, 4.0, 4.0)
     
     @title.sizeToFit
     frame = @title.frame
@@ -45,25 +42,14 @@ class GridCell < AQGridViewCell
     frame.origin.y = CGRectGetMaxY(bounds) - frame.size.height
     frame.origin.x = ((bounds.size.width - frame.size.width) * 0.5).floor
     @title.frame = frame
-    
-    # adjust the frame down for the image layout calculation
-    bounds.size.height = frame.origin.y - bounds.origin.y
-    
-    if ( (imageSize.width <= bounds.size.width) and (imageSize.height <= bounds.size.height) )
-      return
-    end
-    
-    # scale it down to fit
-    hRatio = bounds.size.width / imageSize.width
-    vRatio = bounds.size.height / imageSize.height
-    ratio = [hRatio, vRatio].min
-    
+            
     @image_view.sizeToFit
     frame = @image_view.frame
-    frame.size.width = (imageSize.width * ratio).floor
-    frame.size.height = (imageSize.height * ratio).floor
-    frame.origin.x = ((bounds.size.width - frame.size.width) * 0.5).floor
-    frame.origin.y = ((bounds.size.height - frame.size.height) * 05).floor
+    bounds = self.contentView.bounds
+    frame.size.width = bounds.size.width
+    frame.size.height = bounds.size.height - 25
+    frame.origin.x = 0
+    frame.origin.y = 0
     @image_view.frame = frame
   end
 end

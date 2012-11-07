@@ -5,6 +5,7 @@ class GridViewController < AQGridViewController
   def initWithNibName(nib_name, bundle:bundle)
     if(super)
       @webview_apps = []
+      # @images = []
       navigationItem.title = "Applications"
       navigationItem.rightBarButtonItem = UIBarButtonItem.alloc.initWithBarButtonSystemItem(UIBarButtonSystemItemAdd, target:self, action:"show_application_popover:")
     end
@@ -23,6 +24,8 @@ class GridViewController < AQGridViewController
     # Dir.glob("#{App.resources_path}/*.png").each do |f|
     #   @images << File.basename(f) if File.file?(f)
     # end
+
+    # @images << "3D-simplicity.png"
 
     @webview_apps = WebviewApp.all
 
@@ -49,6 +52,7 @@ class GridViewController < AQGridViewController
 
   def numberOfItemsInGridView(aGridView)
     @webview_apps.size
+    # @images.size
   end
 
   def gridView(aGridView, cellForItemAtIndex:index)
@@ -62,6 +66,8 @@ class GridViewController < AQGridViewController
 
     cell.app_uuid = @webview_apps[index].key
     cell.setImageAndTitle(image, @webview_apps[index].name)
+
+    # cell.setImageAndTitle(UIImage.imageNamed(@images[index]), @images[index])
 
     cell
   end
