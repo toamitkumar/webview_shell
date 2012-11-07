@@ -41,7 +41,6 @@ class DownloadService
     file_manager = NSFileManager.defaultManager
     file_manager.createFileAtPath(@file_path, contents:@response_data, attributes:nil)
     p @file_path
-    # self.delegate.unzip_and_load_web_view
     App.notification_center.post "DownloadCompletedNotification"
   end
 

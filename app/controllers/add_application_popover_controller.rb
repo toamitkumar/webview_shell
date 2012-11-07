@@ -27,9 +27,11 @@ class AddApplicationPopoverController < UITableViewController
     when 0
       @name = CustomUiTextField.create(CGRectMake(10, 2, 380, 40), "Name of Application", 1)
       @name.autocapitalizationType = UITextAutocapitalizationTypeWords
+      @name.delegate = self
       cell.contentView.addSubview(@name)
     when 1
       @url = CustomUiTextField.create(CGRectMake(10, 2, 380, 40), "URL to download", 2)
+      @url.delegate = self
       cell.contentView.addSubview(@url)
     when 2
       submit_button = UIButton.buttonWithType(UIButtonTypeCustom)
@@ -50,6 +52,14 @@ class AddApplicationPopoverController < UITableViewController
 
   def tableView(tableView, heightForHeaderInSection:section)
     40
+  end
+
+  def textFieldShouldReturn(text_field)
+    text = text_field.text
+
+    unless(text.empty?)
+      text_field.resignFirstResponder
+    end
   end
 
   def add_button_click(sender)

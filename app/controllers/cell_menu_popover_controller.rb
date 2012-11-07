@@ -10,7 +10,7 @@ class CellMenuPopoverController < UITableViewController
   end
 
   def heightOfPopUp
-    140
+    135
   end
 
   def widthOfPopUp

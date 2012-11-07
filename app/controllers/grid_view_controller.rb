@@ -1,6 +1,6 @@
 class GridViewController < AQGridViewController 
 
-  attr_accessor :grid_view, :webview_apps, :selected_app_uuid
+  attr_accessor :grid_view, :webview_apps, :selected_app_uuid, :selected_cell_index
 
   def initWithNibName(nib_name, bundle:bundle)
     if(super)
@@ -78,10 +78,18 @@ class GridViewController < AQGridViewController
     @cell_popover_view.contentSizeForViewInPopover = CGSizeMake(@cell_popover_view.widthOfPopUp, @cell_popover_view.heightOfPopUp)
     @cell_popover_view.delegate = self
     @selected_app_uuid = cell.app_uuid
+    @selected_cell_index = index
 
     @cell_popover = UIPopoverController.alloc.initWithContentViewController(@cell_popover_view)
+    @cell_popover.delegate = self
     
     @cell_popover.presentPopoverFromRect(cell.image_view.frame, inView:cell, permittedArrowDirections:UIPopoverArrowDirectionUp, animated:true)
+  end
+
+  def popoverControllerDidDismissPopover(popoverController)
+    if(popoverController == @cell_popover)
+      @grid_view.deselectItemAtIndex(@selected_cell_index, animated:true)
+    end
   end
 
   def portraitGridCellSizeForGridView(aGridView)
@@ -126,6 +134,7 @@ class GridViewController < AQGridViewController
 
   def cell_option_selected(clicked_option)
     app = WebviewApp.find_by_key(@selected_app_uuid)
+    @grid_view.deselectItemAtIndex(@selected_cell_index, animated:true)
 
     close_popover(@cell_popover)
 
