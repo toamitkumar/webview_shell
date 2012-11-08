@@ -27,6 +27,9 @@ class GridViewController < AQGridViewController
 
     # @images << "3D-simplicity.png"
 
+    navigationController.navigationBar.tintColor = UIColor.colorWithRed(0.18, green:0.29, blue:0.42, alpha:1.0)
+    # @grid_view.tintColor = UIColor.colorWithRed(0.42, green:0.43, blue:0.47, alpha:1.0)
+
     @webview_apps = WebviewApp.all
 
     @grid_view.reloadData
@@ -41,13 +44,11 @@ class GridViewController < AQGridViewController
     image = UIImage.imageNamed("background.png")
     background_image.image = image
     self.view.addSubview(background_image)
+    self.view.sendSubviewToBack(background_image)
   end
 
   def shouldAutorotateToInterfaceOrientation(interfaceOrientation)
-    if(Device.ipad? and (interfaceOrientation == UIDeviceOrientationLandscapeLeft or interfaceOrientation == UIDeviceOrientationLandscapeRight))
-      return true
-    end
-    false
+    true
   end
 
   def numberOfItemsInGridView(aGridView)
