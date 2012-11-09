@@ -12,29 +12,20 @@ class GridViewController < AQGridViewController
     self
   end
 
-  def viewDidLoad
-
-    # add_background_image
+  def loadView
+    super
 
     @grid_view = self.view
-    # @grid_view.contentInset = UIEdgeInsetsMake(0.0, 0.0, 12.0, 0.0)
-    # @grid_view.rightContentInset = 12.0
-    # @grid_view.resizesCellWidthToFit = true
-
-    # Dir.glob("#{App.resources_path}/*.png").each do |f|
-    #   @images << File.basename(f) if File.file?(f)
-    # end
-
-    # @images << "3D-simplicity.png"
-
     navigationController.navigationBar.tintColor = UIColor.colorWithRed(0.18, green:0.29, blue:0.42, alpha:1.0)
-    # @grid_view.tintColor = UIColor.colorWithRed(0.42, green:0.43, blue:0.47, alpha:1.0)
-
     @webview_apps = WebviewApp.all
 
     @grid_view.reloadData
+  end
 
+  def viewDidLoad
     super
+
+    add_background_image
   end
 
   def add_background_image
@@ -43,8 +34,7 @@ class GridViewController < AQGridViewController
     background_image = UIImageView.alloc.initWithFrame(window_frame)
     image = UIImage.imageNamed("background.png")
     background_image.image = image
-    self.view.addSubview(background_image)
-    self.view.sendSubviewToBack(background_image)
+    @grid_view.setBackgroundView(background_image)
   end
 
   def shouldAutorotateToInterfaceOrientation(interfaceOrientation)
