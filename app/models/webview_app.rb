@@ -15,7 +15,6 @@ class WebviewApp < NanoStore::Model
       :updated_at => Time.now
     )
     FileUtils.mkdir("#{App.documents_path}/#{app.key}")
-    # FileUtils.mkdir("#{App.documents_path}/#{app.key}/#{_name}")
 
     app.app_path = "#{App.documents_path}/#{app.key}/#{_name}"
     app.zip_path = "#{App.documents_path}/#{app.key}/#{_name}-zipfile.zip"
@@ -45,7 +44,7 @@ class WebviewApp < NanoStore::Model
   end
 
   def icon_path
-    path = "#{app_path}/#{name}.png"
+    path = "#{app_path}/app_icon.png"
     unless(File.file?(path))
       path = "#{App.resources_path}/blank_image.png"
     end
@@ -57,16 +56,16 @@ class WebviewApp < NanoStore::Model
 
     FileUtils.mkdir("#{App.documents_path}/#{key}/#{name}")
     file_archive = ZKFileArchive.archiveWithArchivePath(zip_path)
-    file_archive.inflateToDirectory("#{App.documents_path}/#{key}/#{name}", usingResourceFork:false)
+    file_archive.inflateToDirectory("#{App.documents_path}/#{key}/#{name}/data", usingResourceFork:false)
 
-    file_manager = NSFileManager.defaultManager
-    contents = file_manager.contentsOfDirectoryAtPath("#{App.documents_path}/#{key}", error:nil)
+    # file_manager = NSFileManager.defaultManager
+    # contents = file_manager.contentsOfDirectoryAtPath("#{App.documents_path}/#{key}", error:nil)
 
-    contents.each do |content|
-      if(File.directory?("#{App.documents_path}/#{key}/#{content}") and name != content)
-        FileUtils.mv("#{App.documents_path}/#{key}/#{content}", "#{App.documents_path}/#{key}/#{name}")   
-      end
-    end
+    # contents.each do |content|
+    #   if(File.directory?("#{App.documents_path}/#{key}/#{content}") and name != content)
+    #     FileUtils.mv("#{App.documents_path}/#{key}/#{content}", "#{App.documents_path}/#{key}/#{name}")   
+    #   end
+    # end
   end
 
   def html_path
